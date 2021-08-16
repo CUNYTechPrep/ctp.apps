@@ -1,15 +1,3 @@
-const apps = [
-  {
-    title: 'CUNY Tech Prep Alumni Advice',
-    text: 'Advice for current students from past expereience. An alumni and want to contribute make a PR!',
-    link: '/ctp.alumni.advice',
-  },
-  {
-    title: 'Want To Create An App?',
-    text: 'Follow the contributing guide on the github page.',
-    link: '/404',
-  },
-];
 import {
   Flex,
   Container,
@@ -25,7 +13,6 @@ import {
   Icon,
   theme,
 } from '@chakra-ui/react';
-
 import {
   FcGlobe,
   FcDonate,
@@ -33,9 +20,20 @@ import {
   FcCheckmark as CheckIcon,
 } from 'react-icons/fc';
 import { Link } from 'gatsby';
-
 import { Illustration } from '../components/illustration';
 
+const apps = [
+  {
+    title: 'CUNY Tech Prep Alumni Advice',
+    text: 'Advice for current students from past expereience. An alumni and want to contribute make a PR!',
+    link: '/ctp.alumni.advice',
+  },
+  {
+    title: 'Want To Create An App?',
+    text: 'Follow the contributing guide on the github page.',
+    link: '/404',
+  },
+];
 const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
@@ -108,7 +106,7 @@ export default function CallToActionWithIllustration() {
             <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
               {apps.map((feature, index) => (
                 <HStack key={String(index)} align={'top'}>
-                  <Box color={'green.400'} px={2} c>
+                  <Box color={'green.400'} px={2} >
                     <Icon as={CheckIcon} />
                   </Box>
                   <VStack align={'start'}>

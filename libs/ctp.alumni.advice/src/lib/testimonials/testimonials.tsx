@@ -153,7 +153,7 @@ export default function GridBlurredBackdrop() {
             mt={10}
           >
             {dataShuffle.slice(0, 2).map((cardInfo: any, index: number) => (
-              <TestmonialCard {...cardInfo} index={index} />
+              <TestmonialCard {...cardInfo} index={index} key={String(index)} />
             ))}
           </SimpleGrid>
         </Center>

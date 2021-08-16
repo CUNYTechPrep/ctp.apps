@@ -1,5 +1,5 @@
+import React from 'react'
 import { render } from '@testing-library/react';
-
 import CtpAlumniAdvice from './ctp.alumni.advice';
 
 describe('CtpAlumniAdvice', () => {
