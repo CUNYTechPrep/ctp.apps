@@ -7,4 +7,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **poc init:** continued Project releasing ctp.alumni.advice 259062d
+* **poc init:** releasing ctp.alumni.advice 259062d
