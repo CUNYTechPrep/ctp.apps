@@ -1,3 +1,1 @@
-module.exports = {
-  projects: ['<rootDir>/apps/ctp.alumni.advice'],
-};
+module.exports = { projects: '<rootDir>/libs/ctp.alumni.advice' };

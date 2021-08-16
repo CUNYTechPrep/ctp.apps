@@ -26,9 +26,12 @@
     "ctp.alumni.advice": {
       "tags": []
     },
-    "ctp.alumni.advice-e2e": {
+    "ctp.alumni.app": {
+      "tags": []
+    },
+    "ctp.alumni.app-e2e": {
       "tags": [],
-      "implicitDependencies": ["ctp.alumni.advice"]
+      "implicitDependencies": ["ctp.alumni.app"]
     }
   }
 }

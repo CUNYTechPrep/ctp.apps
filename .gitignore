@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/apps/ctp.alumni.advice/node_modules
+/apps/ctp.alumni.advice/public
+/apps/ctp.alumni.advice/.cache
+
+/apps/ctp.alumni.app/node_modules
+/apps/ctp.alumni.app/public
+/apps/ctp.alumni.app/.cache
