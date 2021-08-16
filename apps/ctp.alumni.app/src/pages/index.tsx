@@ -62,11 +62,12 @@ export default function CallToActionWithIllustration() {
         <Stack
           textAlign={'center'}
           align={'center'}
-          spacing={{ base: 8, md: 10 }}
+          spacing={{ base: 12, md: 15 }}
         >
           <Heading
-            fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            fontWeight={500}
+            fontSize={{ base: '2xl', sm: '4xl', md: '5xl' }}
+            padding={8}
             lineHeight={'110%'}
           >
             CTP Open Source Apps{' '}
@@ -113,7 +114,7 @@ export default function CallToActionWithIllustration() {
                     <Text fontWeight={600}>{feature.title}</Text>
                     <Text color={'gray.600'}>{feature.text}</Text>
                   </VStack>
-                  <Link replace to={`${window.location}${feature.link}`}>
+                  <Link replace to={`${process.env.URL_PATH ? process.env.URL_PATH : "/"}${feature.link}`}>
                     <Button colorScheme="teal" variant="outline">
                       Open
                     </Button>
@@ -158,7 +159,7 @@ export default function CallToActionWithIllustration() {
             </Stack>
             <Box p={4}>
               <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-                <Link to={`${window.location}/graph`}>
+                <Link to={`https://cunytechprep.github.io/ctp.apps/graph`}>
                   <Feature
                     icon={<Icon as={FcGlobe} w={10} h={10} />}
                     title={'Dependency Graph'}

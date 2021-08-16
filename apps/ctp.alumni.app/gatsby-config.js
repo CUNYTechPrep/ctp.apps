@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/ctp.apps/`,  
   siteMetadata: {
     title: `ctp.alumni.app`,
     description: `This is a gatsby application created by Nx.`,
