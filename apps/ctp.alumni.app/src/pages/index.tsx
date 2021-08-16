@@ -26,12 +26,12 @@ const apps = [
   {
     title: 'CUNY Tech Prep Alumni Advice',
     text: 'Advice for current students from past expereience. An alumni and want to contribute make a PR!',
-    link: '/ctp.alumni.advice',
+    link: 'ctp.alumni.advice/',
   },
   {
     title: 'Want To Create An App?',
     text: 'Follow the contributing guide on the github page.',
-    link: '/404',
+    link: '404/',
   },
 ];
 const Feature = ({ title, text, icon }) => {
@@ -103,17 +103,17 @@ export default function CallToActionWithIllustration() {
             <Heading fontSize={'3xl'}>Apps</Heading>
           </Stack>
           <Container maxW={'6xl'} mt={10}>
-            <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
               {apps.map((feature, index) => (
                 <HStack key={String(index)} align={'top'}>
-                  <Box color={'green.400'} px={2} >
+                  <Box color={'green.400'} px={2}>
                     <Icon as={CheckIcon} />
                   </Box>
                   <VStack align={'start'}>
                     <Text fontWeight={600}>{feature.title}</Text>
                     <Text color={'gray.600'}>{feature.text}</Text>
                   </VStack>
-                  <Link to={feature.link}>
+                  <Link replace to={`${window.location}${feature.link}`}>
                     <Button colorScheme="teal" variant="outline">
                       Open
                     </Button>
@@ -158,13 +158,13 @@ export default function CallToActionWithIllustration() {
             </Stack>
             <Box p={4}>
               <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-                <Feature
-                  icon={<Icon as={FcGlobe} w={10} h={10} />}
-                  title={'Dependency Graph'}
-                  text={
-                    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                  }
-                />
+                <Link to={`${window.location}/graph`}>
+                  <Feature
+                    icon={<Icon as={FcGlobe} w={10} h={10} />}
+                    title={'Dependency Graph'}
+                    text={'Click to See the dependency graph'}
+                  />
+                </Link>
                 <Feature
                   icon={<Icon as={FcDonate} w={10} h={10} />}
                   title={'CONTRIBUTING.md'}
