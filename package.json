@@ -25,6 +25,7 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
+    "dep-graph:build": "nx dep-graph --file=apps/ctp.alumni.app/public/graph.html",
     "help": "nx help"
   },
   "private": true,
