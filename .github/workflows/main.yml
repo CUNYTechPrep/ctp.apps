@@ -15,7 +15,7 @@ jobs:
           npm ci 
           npm run affected:test
           npm run build
-          nx dep-graph --file=apps/ctp.alumni.app/public/graph.html
+          npm run dep-graph:build
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
