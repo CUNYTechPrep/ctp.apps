@@ -1,6 +1,7 @@
 # Ctp.Apps @cuny-tech-prep/*
 
 [![Build and Deploy](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml)
+[![CodeQL](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml)
 
 ## Development
 This project was generated using [Nx](https://nx.dev). 
