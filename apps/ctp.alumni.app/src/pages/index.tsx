@@ -170,7 +170,7 @@ export default function CallToActionWithIllustration() {
                   icon={<Icon as={FcDonate} w={10} h={10} />}
                   title={'CONTRIBUTING.md'}
                   text={
-                    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                    'Some Text'
                   }
                 />
                 <Feature
