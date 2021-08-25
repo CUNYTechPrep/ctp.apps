@@ -38,6 +38,7 @@ const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
       <Flex
+        shadow="md"
         w={16}
         h={16}
         align={'center'}
@@ -78,8 +79,10 @@ export default function CallToActionWithIllustration() {
           <Text color={'gray.500'} maxW={'3xl'}>
             Open Sourced Apps Developed by CUNY Tech Prep Alumni/Students
           </Text>
-          <Stack spacing={6} direction={'row'}>
+          <Stack direction={'row'} >
+            <a href="https://ctpalumni.slack.com/archives/C02C7QJ5U93">
             <Button
+              shadow="md"
               rounded={'full'}
               px={6}
               colorScheme={'orange'}
@@ -88,9 +91,12 @@ export default function CallToActionWithIllustration() {
             >
               #Join the Slack Channel
             </Button>
+            </a>
+            <a href="https://github.com/CUNYTechPrep/ctp.apps/blob/main/README.md">
             <Button rounded={'full'} px={6}>
               Learn more
             </Button>
+            </a>
           </Stack>
           <Flex w={'full'}>
             <Illustration
@@ -114,8 +120,10 @@ export default function CallToActionWithIllustration() {
                     <Text fontWeight={600}>{feature.title}</Text>
                     <Text color={'gray.600'}>{feature.text}</Text>
                   </VStack>
-                  <Link replace to={`${process.env.URL_PATH ? process.env.URL_PATH : "/"}${feature.link}`}>
-                    <Button colorScheme="teal" variant="outline">
+                  <Link to={`${feature.link}`}>
+                    <Button 
+                    shadow="md"
+                    colorScheme="teal" variant="outline">
                       Open
                     </Button>
                   </Link>
@@ -166,20 +174,24 @@ export default function CallToActionWithIllustration() {
                     text={'Click to See the dependency graph'}
                   />
                 </Link>
+                <Link to={`https://github.com/CUNYTechPrep/.github/blob/feature/SW/open-saused/CONTRIBUTING.md`}>
                 <Feature
                   icon={<Icon as={FcDonate} w={10} h={10} />}
                   title={'CONTRIBUTING.md'}
                   text={
-                    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                    'Contributions welcome!'
                   }
                 />
+                </Link>
+                <Link to={`https://github.com/CUNYTechPrep/ctp.apps/blob/main/CODE_OF_CONDUCT.md`}>
                 <Feature
                   icon={<Icon as={FcInTransit} w={10} h={10} />}
                   title={'Code Of Conduct'}
                   text={
-                    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                    'Our Pledge, Standards, Enforcement Responsibilities'
                   }
                 />
+                </Link>
               </SimpleGrid>
             </Box>
           </Container>
