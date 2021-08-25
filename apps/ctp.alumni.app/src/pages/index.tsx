@@ -11,14 +11,14 @@ import {
   VStack,
   ChakraProvider,
   Icon,
-  theme
+  theme,
 } from '@chakra-ui/react';
 import {
   FcGlobe,
   FcDonate,
   FcInTransit,
   FcCheckmark as CheckIcon,
-  FcIdea
+  FcIdea,
 } from 'react-icons/fc';
 import { Link } from 'gatsby';
 import { Illustration } from '../components/illustration';
@@ -27,13 +27,13 @@ const apps = [
   {
     title: 'CUNY Tech Prep Alumni Advice',
     text: 'Advice for current students from past expereience. An alumni and want to contribute make a PR!',
-    link: 'ctp.alumni.advice/'
+    link: 'ctp.alumni.advice/',
   },
   {
     title: 'Want To Create An App?',
     text: 'Follow the contributing guide on the github page.',
-    link: 'https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%92%A1+feature&template=feature_request.md&title=Feature%3A+'
-  }
+    link: 'https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%92%A1+feature&template=feature_request.md&title=Feature%3A+',
+  },
 ];
 const Feature = ({ title, text, icon }) => {
   return (
@@ -188,7 +188,9 @@ export default function CallToActionWithIllustration() {
                   <Feature
                     icon={<Icon as={FcInTransit} w={10} h={10} />}
                     title={'Code Of Conduct'}
-                    text={'Our Pledge, Standards, Enforcement Responsibilities.'}
+                    text={
+                      'Our Pledge, Standards, Enforcement Responsibilities.'
+                    }
                   />
                 </Link>
                 <Link
