@@ -1,10 +1,17 @@
 module.exports = {
-  pathPrefix: `/ctp.apps/`,  
+  pathPrefix: `/ctp.apps/`,
   siteMetadata: {
     title: `ctp.alumni.app`,
     description: `This is a gatsby application created by Nx.`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'G-G7DJKMT8QR',
+        head: true,
+      },
+    },
     {
       resolve: 'gatsby-plugin-svgr',
       options: {
