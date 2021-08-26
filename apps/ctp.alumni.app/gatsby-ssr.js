@@ -13,13 +13,13 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
     <script
       dangerouslySetInnerHTML={{
         __html: `
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-201299127-1');
-	gtag('config', 'G-EHPRWCNXFV');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-201299127-1');
+		gtag('config', 'G-EHPRWCNXFV');
 	`,
       }}
-    ></script>,
+    />,
   ]);
 };
