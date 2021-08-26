@@ -6,13 +6,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-G7DJKMT8QR',
-        head: true,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-svgr',
       options: {
         svgo: false,
