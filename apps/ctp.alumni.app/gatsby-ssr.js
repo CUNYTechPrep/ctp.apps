@@ -5,11 +5,11 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
     <script
       async
       src="https://www.googleoptimize.com/optimize.js?id=OPT-NR3T8JQ"
-    ></script>,
+    />,
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-EHPRWCNXFV"
-    ></script>,
+    />,
     <script
       dangerouslySetInnerHTML={{
         __html: `
