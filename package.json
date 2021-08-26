@@ -6,7 +6,7 @@
     "nx": "nx",
     "start": "nx serve",
     "build": "nx build --prod --prefix-paths",
-    "test": "nx test",
+    "test": "npm run lint && nx run-many --all --target=test --codeCoverage --env=jsdom",
     "test:all": "nx run-many --all --target=test --env=jsdom",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
