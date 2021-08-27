@@ -1,6 +1,6 @@
 import React from 'react';
 
-const gtmId = 'G-EHPRWCNXFV';
+const gtmId = "'G-EHPRWCNXFV'";
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
