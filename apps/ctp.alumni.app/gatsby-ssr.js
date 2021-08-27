@@ -20,7 +20,6 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         gtag('js', new Date());
         gtag('config', 'UA-201299127-1');
         gtag('config', '${gtmId}');
-
 	    `,
       }}
     />,
