@@ -19,7 +19,7 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-201299127-1');
-        gtag('config', ${gtmId});
+        gtag('config', '${gtmId}');
 	    `,
       }}
     />,
