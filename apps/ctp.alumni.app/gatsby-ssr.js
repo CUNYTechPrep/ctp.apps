@@ -1,6 +1,6 @@
 import React from 'react';
 
-const gtmId = "'G-EHPRWCNXFV'";
+const gtmId = 'G-EHPRWCNXFV';
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
@@ -19,7 +19,8 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-201299127-1');
-        gtag('config', ${gtmId});
+        gtag('config', '${gtmId}');
+
 	    `,
       }}
     />,
