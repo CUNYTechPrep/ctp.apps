@@ -16,7 +16,7 @@ jobs:
           npm run affected:test
           npm run build
           npm run dep-graph:build
-          mv ./apps/ctp.alumni.slack.code-of-conduct ./apps/ctp.alumni.app
+          mv ./apps/ctp.alumni.slack.code-of-conduct ./apps/ctp.alumni.app/public
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
