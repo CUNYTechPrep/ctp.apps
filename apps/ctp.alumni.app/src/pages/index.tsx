@@ -18,6 +18,7 @@ import {
   FcDonate,
   FcInTransit,
   FcCheckmark as CheckIcon,
+  FcIdea,
 } from 'react-icons/fc';
 import { Link } from 'gatsby';
 import { Illustration } from '../components/illustration';
@@ -31,7 +32,7 @@ const apps = [
   {
     title: 'Want To Create An App?',
     text: 'Follow the contributing guide on the github page.',
-    link: '404/',
+    link: 'https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%92%A1+feature&template=feature_request.md&title=Feature%3A+',
   },
 ];
 const Feature = ({ title, text, icon }) => {
@@ -79,23 +80,23 @@ export default function CallToActionWithIllustration() {
           <Text color={'gray.500'} maxW={'3xl'}>
             Open Sourced Apps Developed by CUNY Tech Prep Alumni/Students
           </Text>
-          <Stack direction={'row'} >
+          <Stack direction={'row'}>
             <a href="https://ctpalumni.slack.com/archives/C02C7QJ5U93">
-            <Button
-              shadow="md"
-              rounded={'full'}
-              px={6}
-              colorScheme={'orange'}
-              bg={'orange.400'}
-              _hover={{ bg: 'orange.500' }}
-            >
-              #Join the Slack Channel
-            </Button>
+              <Button
+                shadow="md"
+                rounded={'full'}
+                px={6}
+                colorScheme={'orange'}
+                bg={'orange.400'}
+                _hover={{ bg: 'orange.500' }}
+              >
+                #Join the Slack Channel
+              </Button>
             </a>
             <a href="https://github.com/CUNYTechPrep/ctp.apps/blob/main/README.md">
-            <Button rounded={'full'} px={6}>
-              Learn more
-            </Button>
+              <Button rounded={'full'} px={6}>
+                Learn more
+              </Button>
             </a>
           </Stack>
           <Flex w={'full'}>
@@ -121,9 +122,7 @@ export default function CallToActionWithIllustration() {
                     <Text color={'gray.600'}>{feature.text}</Text>
                   </VStack>
                   <Link to={`${feature.link}`}>
-                    <Button 
-                    shadow="md"
-                    colorScheme="teal" variant="outline">
+                    <Button shadow="md" colorScheme="teal" variant="outline">
                       Open
                     </Button>
                   </Link>
@@ -166,7 +165,7 @@ export default function CallToActionWithIllustration() {
               </Text>
             </Stack>
             <Box p={4}>
-              <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+              <SimpleGrid columns={{ base: 2, md: 4 }} spacing={10}>
                 <Link to={`https://cunytechprep.github.io/ctp.apps/graph`}>
                   <Feature
                     icon={<Icon as={FcGlobe} w={10} h={10} />}
@@ -174,23 +173,34 @@ export default function CallToActionWithIllustration() {
                     text={'Click to See the dependency graph'}
                   />
                 </Link>
-                <Link to={`https://github.com/CUNYTechPrep/.github/blob/feature/SW/open-saused/CONTRIBUTING.md`}>
-                <Feature
-                  icon={<Icon as={FcDonate} w={10} h={10} />}
-                  title={'CONTRIBUTING.md'}
-                  text={
-                    'Contributions welcome!'
-                  }
-                />
+                <Link
+                  to={`https://github.com/CUNYTechPrep/.github/blob/feature/SW/open-saused/CONTRIBUTING.md`}
+                >
+                  <Feature
+                    icon={<Icon as={FcDonate} w={10} h={10} />}
+                    title={'CONTRIBUTING.md'}
+                    text={'Contributions welcome!'}
+                  />
                 </Link>
-                <Link to={`https://github.com/CUNYTechPrep/ctp.apps/blob/main/CODE_OF_CONDUCT.md`}>
-                <Feature
-                  icon={<Icon as={FcInTransit} w={10} h={10} />}
-                  title={'Code Of Conduct'}
-                  text={
-                    'Our Pledge, Standards, Enforcement Responsibilities'
-                  }
-                />
+                <Link
+                  to={`https://github.com/CUNYTechPrep/ctp.apps/blob/main/CODE_OF_CONDUCT.md`}
+                >
+                  <Feature
+                    icon={<Icon as={FcInTransit} w={10} h={10} />}
+                    title={'Code Of Conduct'}
+                    text={
+                      'Our Pledge, Standards, Enforcement Responsibilities.'
+                    }
+                  />
+                </Link>
+                <Link
+                  to={`https://github.com/CUNYTechPrep/ctp.apps/discussions`}
+                >
+                  <Feature
+                    icon={<Icon as={FcIdea} w={10} h={10} />}
+                    title={'Discussions'}
+                    text={'Use discussions to ask and answer questions.'}
+                  />
                 </Link>
               </SimpleGrid>
             </Box>
