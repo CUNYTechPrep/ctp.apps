@@ -1,36 +1,37 @@
+
 # Ctp.Apps @cuny-tech-prep/*
+<img src="https://cunytechprep.nyc/img/banner-logo.png" align="left" width="152px" height="152px"/>
+<img align="left" width="0" height="162px" hspace="10"/>
+
+ > Template files for writing maintanable GitHub projects. Make your repo pretty!
 
 [![Build and Deploy](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml)
 [![CodeQL](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml)
+ [![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/) 
+
+So you had an idea and developed the next world's industry-changing application. You decided to open-source it because you're way cool. Now you need to educate people about your project and need some docs to get started. You got it. :alien:
+
+<br>
+<p align="center">
+<strong>Templates included:</strong>
+<a href="/.github/README.md">README</a> • <a href="/.github/CONTRIBUTING.md">CONTRIBUTING </a> • <a href="/.github/PULL_REQUEST_TEMPLATE.md">PULL REQUEST</a> • <a href="/.github/ISSUE_TEMPLATE.md">ISSUE TEMPLATE</a> • <a href="/.github/CONTRIBUTORS.md">CONTRIBUTORS</a>
+</p>
+<br>
+
+## Installing
+
+Clone this project and name it accordingly:
+
+``git clone https://github.com/CUNYTechPrep/ctp.apps && cd ctp.apps && npm i``
 
 ## Development
 This project was generated using [Nx](https://nx.dev). 
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
-
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are sharable across libraries and applications. They can be imported from `@ctp.apps/mylib`.
-
 ## Development server
 
 Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+.
 
 ## Build
 
