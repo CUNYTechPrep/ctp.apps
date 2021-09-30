@@ -14,7 +14,7 @@ So you had an idea and developed the next world's industry-changing application.
 <br>
 <p align="center">
 <strong>Templates included:</strong>
-<a href="/.github/README.md">README</a> • <a href="/.github/CONTRIBUTING.md">CONTRIBUTING </a> • <a href="/.github/PULL_REQUEST_TEMPLATE.md">PULL REQUEST</a> • <a href="/.github/ISSUE_TEMPLATE.md">ISSUE TEMPLATE</a> • <a href="/.github/CONTRIBUTORS.md">CONTRIBUTORS</a>
+<a href="https://github.com/CUNYTechPrep/ctp.apps#readme">README</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/blob/main/CONTRIBUTING.md">CONTRIBUTING </a> • <a href="https://github.com/CUNYTechPrep/.github/blob/feature/SW/open-saused/PULL_REQUEST_TEMPLATE.md">PULL REQUEST</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/issues/new/choose">ISSUE TEMPLATE</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/graphs/contributors">CONTRIBUTORS</a>
 </p>
 <br>
 
