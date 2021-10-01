@@ -2,8 +2,6 @@
 
 ## Special thanks for all the people who had helped this project so far:
 
-> Here you should include a list of people who helped your project. 
-
 * [SupaStuff](https://github.com/SupaStuff)
 * [medgardo](https://github.com/medgardo)
 
