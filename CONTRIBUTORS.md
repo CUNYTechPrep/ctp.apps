@@ -4,14 +4,13 @@
 
 > Here you should include a list of people who helped your project. 
 
-* [Contributor #1](http://LINK_HERE)
-* [Contributor #2](http://LINK_HERE)
-* [Contributor #3](http://LINK_HERE)
-* so on...
+* [SupaStuff](https://github.com/SupaStuff)
+* [medgardo](https://github.com/medgardo)
 
 ## I would like to join this list. How can I help the project?
 
 We're currently looking for contributions for the following:
+> Reach out over slack [#open-source](https://ctpalumni.slack.com/archives/C02C7QJ5U93)
 
 - [ ] [Bug fixes](https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%90%9B+bug&template=bug_report.md&title=Bug%3A+) 
 - [ ] [Feature Requests](https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%92%A1+feature&template=feature_request.md&title=Feature%3A+)  
