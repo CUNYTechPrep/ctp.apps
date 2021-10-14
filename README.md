@@ -9,14 +9,29 @@
 [![CodeQL](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml)
  [![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/) 
 
-So you had an idea and developed the next world's industry-changing application. You decided to open-source it because you're way cool. Now you need to educate people about your project and need some docs to get started. You got it. :alien:
+CUNY Tech Prep is a year long technical and professional development program for CUNY computer science majors to learn in-demand technologies, master professional soft skills, and land great tech jobs in NYC.
 
 <br>
 <p align="center">
 <strong>Templates included:</strong>
-<a href="/.github/README.md">README</a> • <a href="/.github/CONTRIBUTING.md">CONTRIBUTING </a> • <a href="/.github/PULL_REQUEST_TEMPLATE.md">PULL REQUEST</a> • <a href="/.github/ISSUE_TEMPLATE.md">ISSUE TEMPLATE</a> • <a href="/.github/CONTRIBUTORS.md">CONTRIBUTORS</a>
+<a href="https://github.com/CUNYTechPrep/ctp.apps#readme">README</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/blob/main/CONTRIBUTING.md">CONTRIBUTING </a> • <a href="https://github.com/CUNYTechPrep/.github/blob/feature/SW/open-saused/PULL_REQUEST_TEMPLATE.md">PULL REQUEST</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/issues/new/choose">ISSUE TEMPLATE</a> • <a href="https://github.com/CUNYTechPrep/ctp.apps/graphs/contributors">CONTRIBUTORS</a>
 </p>
 <br>
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+> or if you like it simple:
+
+1. `Fork` this repository
+2. Create a `branch`
+3. `Commit` your changes
+4. `Push` your `commits` to the `branch`
+5. Submit a `pull request`
+
+> You can find more information about Pull Requests [here](https://help.github.com/categories/collaborating-on-projects-using-pull-requests/)
+
+Check also the [list of contributors](CONTRIBUTORS.md) who helped on this project.
 
 ## Installing
 
