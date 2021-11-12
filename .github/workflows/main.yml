@@ -23,8 +23,7 @@ jobs:
           requirements: ./apps/ctp.alumni.survey/requirements.txt
       - name: Install and Build Juypter Book 🔧
         run: |
-          cd ./apps/ctp.alumni.survey/app 
-          jupyter-book build .  --path-output ..
+          jupyter-book build ./apps/ctp.alumni.survey/ --path-output=apps/ctp.alumni.survey/
           mv ./apps/ctp.alumni.survey/_build/html/ ./apps/ctp.alumni.app/public/ctp.alumni.survey
 
       - name: Deploy 🚀
