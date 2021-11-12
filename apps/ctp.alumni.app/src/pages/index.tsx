@@ -30,6 +30,11 @@ const apps = [
     link: 'ctp.alumni.advice/',
   },
   {
+    title: 'CUNY Tech Prep Alumni Survey',
+    text: 'Data Visulizations Taken From Alumni Surveys',
+    link: 'ctp.alumni.survey/intro',
+  },
+  {
     title: 'Want To Create An App?',
     text: 'Follow the contributing guide on the github page.',
     link: 'https://github.com/CUNYTechPrep/ctp.apps/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C+%F0%9F%92%A1+feature&template=feature_request.md&title=Feature%3A+',

@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main 
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,12 +12,22 @@ jobs:
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
-          npm ci 
+          npm ci
           npm run affected:test
           npm run build
           npm run dep-graph:build
           mv ./apps/ctp.alumni.slack.code-of-conduct ./apps/ctp.alumni.app/public
-          
+      - uses: actions/setup-python@v1
+      - uses: BSFishy/pip-action@v1
+        with:
+          requirements: ./apps/ctp.alumni.survey/requirements.txt
+      - run: python main.py
+      - name: Install and Build Juypter Book 🔧
+        run: |
+          cd apps/ctp.alumni.survey/app 
+          jupyter-book build .  --path-output ..
+          mv /home/runner/work/ctp.apps/ctp.apps/apps/ctp.alumni.survey/_build/html/ /home/runner/work/ctp.apps/ctp.apps/apps/ctp.alumni.app/public/ctp.alumni.survey
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
