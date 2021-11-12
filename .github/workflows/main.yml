@@ -24,9 +24,9 @@ jobs:
       - run: python main.py
       - name: Install and Build Juypter Book 🔧
         run: |
-          cd apps/ctp.alumni.survey/
+          cd apps/ctp.alumni.survey/app 
           jupyter-book build .  --path-output ..
-          mv ./apps/ctp.alumni.survey/_build/html ./apps/ctp.alumni.app/public/ctp.alumni.survey
+          mv /home/runner/work/ctp.apps/ctp.apps/apps/ctp.alumni.survey/_build/html/ /home/runner/work/ctp.apps/ctp.apps/apps/ctp.alumni.app/public/ctp.alumni.survey
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
