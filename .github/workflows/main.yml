@@ -20,11 +20,11 @@ jobs:
       - uses: actions/setup-python@v1
       - uses: BSFishy/pip-action@v1
         with:
-          requirements: ./apps/ctp.alumni.survey/app/requirements.txt
+          requirements: ./apps/ctp.alumni.survey/requirements.txt
       - run: python main.py
       - name: Install and Build Juypter Book 🔧
         run: |
-          cd apps/ctp.alumni.survey/app
+          cd apps/ctp.alumni.survey/
           jupyter-book build .  --path-output ..
           mv ./apps/ctp.alumni.survey/_build/html ./apps/ctp.alumni.app/public/ctp.alumni.survey
 
