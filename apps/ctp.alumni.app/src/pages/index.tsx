@@ -32,7 +32,7 @@ const apps = [
   {
     title: 'CUNY Tech Prep Alumni Survey',
     text: 'Data Visulizations Taken From Alumni Surveys',
-    link: 'ctp.alumni.survey/intro',
+    link: `${typeof window !== "undefined" && window?.location?.hostname}/ctp.alumni.survey`,
   },
   {
     title: 'Want To Create An App?',

@@ -39,7 +39,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "ctp.alumni.app": {
       "root": "apps/ctp.alumni.app",
@@ -83,7 +84,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "ctp.alumni.app-e2e": {
       "root": "apps/ctp.alumni.app-e2e",
@@ -109,11 +111,10 @@
             "lintFilePatterns": ["apps/ctp.alumni.app-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["ctp.alumni.app"]
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
   },
   "schematics": {
     "@nrwl/react": {
@@ -135,6 +136,5 @@
         "style": "css"
       }
     }
-  },
-  "defaultProject": "ctp.alumni.app"
+  }
 }

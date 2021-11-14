@@ -1,6 +1,6 @@
 {
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  }
 }

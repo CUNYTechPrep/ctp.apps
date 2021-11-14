@@ -10,7 +10,7 @@ import {
   theme,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './color-mode-switcher/color-mode-switcher';
-import GridBlur from './testimonials/testimonials'
+import GridBlur from './testimonials/testimonials';
 
 export function App() {
   return (
@@ -18,16 +18,16 @@ export function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack >
-            <GridBlur/>
+          <VStack>
+            <GridBlur />
             <Link
               color="teal.500"
               href="https://cunytechprep.nyc/"
-              fontSize={"2l"}
+              fontSize={'2l'}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn About CTP 
+              Learn About CTP
             </Link>
             <Link
               color="teal.500"

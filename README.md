@@ -1,13 +1,13 @@
+# Ctp.Apps @cuny-tech-prep/\*
 
-# Ctp.Apps @cuny-tech-prep/*
 <img src="https://cunytechprep.nyc/img/banner-logo.png" align="left" width="152px" height="152px"/>
 <img align="left" width="0" height="162px" hspace="10"/>
 
- > Template files for writing maintanable GitHub projects. Make your repo pretty!
+> Template files for writing maintanable GitHub projects. Make your repo pretty!
 
 [![Build and Deploy](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/main.yml)
 [![CodeQL](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/CUNYTechPrep/ctp.apps/actions/workflows/codeql-analysis.yml)
- [![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/) 
+[![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 CUNY Tech Prep is a year long technical and professional development program for CUNY computer science majors to learn in-demand technologies, master professional soft skills, and land great tech jobs in NYC.
 
@@ -19,6 +19,7 @@ CUNY Tech Prep is a year long technical and professional development program for
 <br>
 
 ## Contributing
+
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 > or if you like it simple:
@@ -37,12 +38,14 @@ Check also the [list of contributors](CONTRIBUTORS.md) who helped on this projec
 
 Clone this project and name it accordingly:
 
-``git clone https://github.com/CUNYTechPrep/ctp.apps && cd ctp.apps && npm i``
+`git clone https://github.com/CUNYTechPrep/ctp.apps && cd ctp.apps && npm i`
 
 ## Development
-This project was generated using [Nx](https://nx.dev). 
+
+This project was generated using [Nx](https://nx.dev).
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+
 ## Development server
 
 Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.

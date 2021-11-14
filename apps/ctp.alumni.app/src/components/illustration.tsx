@@ -1,7 +1,4 @@
-    import {
-      Icon,
-      IconProps,
-    } from '@chakra-ui/react';
+import { Icon, IconProps } from '@chakra-ui/react';
 
 export const Illustration = (props: IconProps) => {
   return (
@@ -10,7 +7,8 @@ export const Illustration = (props: IconProps) => {
       viewBox="0 0 702 448"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -777,7 +775,8 @@ export const Illustration = (props: IconProps) => {
           y1="345.577"
           x2="527.144"
           y2="147.032"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#B8D8D5" />
           <stop offset="0.42" stopColor="#CEE0DA" />
           <stop offset="1" stopColor="#FFF0E6" />
@@ -788,7 +787,8 @@ export const Illustration = (props: IconProps) => {
           y1="106.847"
           x2="-86.7512"
           y2="315.127"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#B8D8D5" />
           <stop offset="0.47" stopColor="#CCDFDA" />
           <stop offset="1" stopColor="#FFF0E6" />
@@ -799,7 +799,8 @@ export const Illustration = (props: IconProps) => {
           y1="150.967"
           x2="671.263"
           y2="250.917"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFBF2F" />
           <stop offset="1" stopColor="#FD9500" />
         </linearGradient>
@@ -809,7 +810,8 @@ export const Illustration = (props: IconProps) => {
           y1="337.91"
           x2="471.34"
           y2="225.092"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFBF2F" />
           <stop offset="0.48" stopColor="#FEB422" />
           <stop offset="1" stopColor="#FD9500" />

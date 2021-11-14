@@ -1,317 +1,317 @@
 [
-	{
-	  "cohort": 6,
-	  "name": "Karsh",
-	  "role": "Software Engineer Intern",
-	  "company": "MetLife",
-	  "content": "Network with as many recruiters as you can and Focus on the Behavioral interview aswell as the Technical interview. Most students tend to focus more on the Technical part of the interview since it tends to be more challenging but from my job hunting experience this year, the Behavioral interview can be easy to mess up IF you don't prepare for it so make sure you practice the Behavioral part as well."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jonathan",
-	  "role": "Php Laravel Full stack intern",
-	  "company": "Agile Masters",
-	  "content": "Practice Behavioral interviews!!!"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Zifei",
-	  "role": "Software Developer",
-	  "company": "TCS",
-	  "content": "1. Improve the resume\n2. Practice more\n3. Familiarize yourself with the technology used in the project on your resume before the interview.\n4. Prepare behaver questions in advance"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Syed",
-	  "role": "Data Science Intern",
-	  "company": "B. Braun Medical Inc.",
-	  "content": "apply anywhere and everywhere, ive applied to well over 100 places"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jonathan",
-	  "role": "Associate software engineer",
-	  "company": "Mindgrub",
-	  "content": "NYC is very competitive, applying for remote positions out of state gave me better luck in general. When talking to someone always be very polite and professional. With the company I got an offer from I was able to have a good conversation with everyone I spoke with. I tried to present myself as someone who would be good to work with, not just someone who understands a topic. For coding questions, and hacker rank question, I made sure to explain my taught processes to the interview if they were there. If I was not talking to someone I would leave a comment explain my thought process. Always try to write clean code, and follow best coding practices, such as good naming conventions and more."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Remi",
-	  "role": "Customer Success Associate Manager (Commercial)",
-	  "company": "Premise Data Corporation",
-	  "content": "Use your network. I was notified of the position through a mutual friend who works in the company."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Zilong",
-	  "role": "Software Engineer Intern",
-	  "company": "Dotdash",
-	  "content": "Keep on the lookout for job postings, especially the ones where they say they have connections/\"will pass on your name\"/\"contact me if you apply\". Do more career coach & technical interviews to get comfortable with interviewing."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Zifei",
-	  "role": "Intern - Software Development",
-	  "company": "Pearson",
-	  "content": "Familiarize yourself with the concepts and applications of each technology mentioned on your resume. If the project on your resume is a team development, firmly consider yourself as a team leader."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Farhene",
-	  "role": "Technology Enablement Intern",
-	  "company": "Slalom",
-	  "content": "Interview prep helped me a lot. Don’t be afraid of interviewing practices. Also make sure to take advantage of city events and workshop events and ask around for LinkedIn! You never know which comes in handy! Also, don’t depend on the “right” internship. A lot of skills from one internship can be transferrable to your future job as long as it remains around your desired career field. Also, KEEP applying! If you feel demotivated and suffer from Imposter’s Syndrome like I did, you have to stop and assess what skills you are able to do whether it’s beginner or pro. Choose a day of the week to go internship hunting! Check out LinkedIn’s internship opportunities because a lot of internships can be found there! I also tried out Ladders 4 Leaders program and this is where I landed my internship! However, without interviewing practices and without studying up in my technologies, I never would have gotten to where I am today! That’s my giant piece of content :3"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Alex",
-	  "role": "Computer Programmer",
-	  "company": "Eastern Union Funding",
-	  "content": "Networking with other engineers is the best way to get a job. All of my interviews and offers came from other engineers that gave recommendations to me."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Joseph",
-	  "role": "Machine Learning Intern",
-	  "company": "Walkspan",
-	  "content": "CTP is probably one of the greatest programs that you can be in if you're trying to land a job in the tech industry. I think that aside from being able to practice for technical interviews, CTP helped me prepare for behavioral interviews, as well as how to present myself to the best of my ability in those circumstances. I'd recommend that prior to each interview that you do, you meet with your career coach and practice a mock behavioral and look at what you could refine. Additionally, I would advise to schedule a mock technical prior to an interview - you're put in a position very similar to an actually interview, and there is honestly no better way to prepare than being asked a technical question by a software engineer in the field."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Allon",
-	  "role": "Data Engineering Intern",
-	  "company": "Dotdash",
-	  "content": "I'd say that other CTP fellows should not fear having to learn new things. If the job isn't in a field you know much about, you can still go for it as long as you think you might be interested in it. I am in the webdev track but somehow got a data science job."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Asma",
-	  "role": "Software Engineer",
-	  "company": "JPMorgan & Chase Co.",
-	  "content": "I think I'd say not to get too caught up in what works for the majority. Sometimes some strategies like \"LeetCode grinding\" and doing a couple of problems a day doesn't work for everybody, and honestly, for me it led to burn out. Find out what works best for you, and make sure you understand the core concept behind each problem, as opposed to just trying to encounter every problem there is. With the core concept understood, you can tackle any problem."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Muneeb",
-	  "role": "Associate Software Engineer",
-	  "company": "Scholastic",
-	  "content": "1. Its a numbers game. Ignore the job description experience criteria and keep applying. 2. Use specific search terms for better results. 3. Be able to talk about System Design. Its not optional. It came up in every single interview I had.  4. Know a bit about the internals of your language of choice. For example, for Java, I was asked about JVM specific GC optimizations, spaces etc. For python you could be asked about the GIL. Suffice to say, look up 'top x trick questions about lang y'."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Dmitriy",
-	  "role": "Full Stack Engineer",
-	  "company": "Confiant Inc.",
-	  "content": "Networking is a must - keep reaching out to people on LinkedIn, not necessarily asking for referrals but just to get to know how they managed to land their position\nKeep applying constantly - every week apply to at least 5 open positions that match your qualifications, and even if they do partially\nDo stuff - in your free time learn how to use popular tools that were not covered in CTP program (CI/CD, testing, additional frameworks, databases, web security, etc.)"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Joseph",
-	  "role": "Global Data Analyst",
-	  "company": "Bloomberg LP",
-	  "content": "I suggest that you keep pushing yourself. That sounds broad, but in truth, you have to keep attending events (i.e. company events, hackathons). From there, it becomes natural to land an interview and also speak comfortably with other professionals in the field. My interviews were not as technical as they were behavioral. In that sense, and in general, I'd recommend that other CTP fellows leverage their career coaches pre-interview. I had about 4-5 mock behavioral sessions with my career coach. After every session, I felt more confident with myself and was able to translate that confidence to the interviews as well. Though my interview was mainly behavioral, there were some technical questions asked. To prepare, I would recommend that fellows leverage the mock technical interviews: those mock interviews put you in the same setting as an actual interview. I'd also recommend that fellows never stop doing projects. Interviewers will ask you about your experience and what you learned from those experiences/projects."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jonathan",
-	  "role": "Intern",
-	  "company": "Dow Jones",
-	  "content": "Prepare for the behavioral interview!"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Saiful",
-	  "role": "Software Engineering Corps Member",
-	  "company": "NYC Mayor's Office of the Chief Technology Officer",
-	  "content": "(1) Have a cover letter \n\n(2) Behavioral interview questions matter as much as technical interview questions"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Joseph",
-	  "role": "Software Engineer",
-	  "company": "Tata Consultancy Service",
-	  "content": "Get tons of experience before graduating. Master data structures and algorithms/"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Mariam",
-	  "role": "Virtual Software Engineer Intern",
-	  "company": "Xandr",
-	  "content": "For me, getting a reference or anyone to boost your resume to recruiters was the best way to an interview. On all other occasions I never even made it to the first round. My best content is to ask around your family and friends first, to see if they have any connections to companies you want to work for. I would also join New York City propelled programs like Ladders for Leaders, as they have a lot of opportunities and students under that program get priority for the jobs they offer. I realized that getting to the phone screen/first round is the hardest part of even having a chance at a role. That reference or resume push gets you the interview and from there it's up to you to show them what you know. Personally, I feel as though I may not be up to par with other people in my discipline, but I know the basics and I think the company saw that I had the basics with which they want to mold me to help them best."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Konstantinos",
-	  "role": "Software Engineer",
-	  "company": "Intelligent Automation, Inc",
-	  "content": "Referrals / References! It's the best way to get a job honestly."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Ramiz",
-	  "role": "Backend Developer",
-	  "company": "SAP",
-	  "content": "Keep applying to positions everyday and practice coding questions"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Anastasiya",
-	  "role": "Design Engineer",
-	  "company": "Design Commerce Technologies, Inc",
-	  "content": "My content is to spend more time working on personal portfolio projects as well as network with people who have similar interests as you. Personal portfolio projects (which include hackahtons, demos, personal projects) really helped me to express my skills and this recent offer that I received  had a lot to do with the projects that the person saw on my website. For networking strategy, I recommend staying in touch with people that you already know while also going to hackathons or other events where like minded people spend their time. In this way, networking will feel natural because there is always something to talk about."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jacky",
-	  "role": "Associate Software Engineer (Backend)",
-	  "company": "Conductor",
-	  "content": "Consistently practice your leetcodes and personal projects and trust in the process"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jing",
-	  "role": "Frontend developer intern",
-	  "company": "Basepair",
-	  "content": "Just keep applying and keep practicing!"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Kareem",
-	  "role": "Front End Developer/Designer",
-	  "company": "BAM Creative",
-	  "content": "Never shy away from doing a Cover Letter, even when employers don't necessarily require one. It adds a great personal touch to elevate the first impression you make on your potential employers."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Alfredo",
-	  "role": "Software Engineering Intern",
-	  "company": "TracFlo",
-	  "content": "Always Apply, Don't Get Discouraged."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Gabriel",
-	  "role": "IT AUDIT",
-	  "company": "Nyc comptroller office",
-	  "content": "It is hard but possible"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Alamin",
-	  "role": "Associate in Software Developer",
-	  "company": "Infosys",
-	  "content": "Do not give up, Always practice, specially 2-3 days before the interviews. Do not just stick with the coding interview, review the basic coding questions."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Masuda",
-	  "role": "Technology Intern",
-	  "company": "The New York Times",
-	  "content": "Don't give up and be genuine. People can tell when you are really invested in your work and their company as opposed to simply looking for a job."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Chris",
-	  "role": "Summer Software Development Analyst",
-	  "company": "Citi",
-	  "content": "Understand your projects."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Iman",
-	  "role": "Image Recognition Intern",
-	  "company": "Framebridge",
-	  "content": "Knowing the company that you're interviewing for very well goes a long way on interviews, do your company research beforehand. Don't get discouraged by the amount of applications or interviews you've done and how many of those didn't have a positive outcome, just keep going and know that you'll end up with something that is going to be the best for your experience."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Christian",
-	  "role": "Analyst, Back-End Developer",
-	  "company": "Avanade",
-	  "content": "Become experts in what interest you, always work of your soft skills just as much as your technical skills"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Isaiah",
-	  "role": "Data Science Intern",
-	  "company": "Annalect",
-	  "content": "Take advantage of the job postings career coaches and other fellows are posting. As with behavioral interviews for data science roles, prep for on the spot technical questions related to statistics, machine learning, case studies, or technical details about your projects. Within the these interviews, avoid technical jargon and explain things in the most basic form. This will show that you understand and demonstrate that you know how to communicate to a  non-technical audience. Technical interviews, it may vary from white board interviews to a simple one-to-one on the fly quizzing about concepts commonly covered in data science. I prepped using by doing mock interviews for white boarding. Also, I made sure to have a deep understanding of the data science topics rather than memorizing."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Xiangmin",
-	  "role": "Web Developer",
-	  "company": "Hunter College Chinese Flagship Program",
-	  "content": "I'd say to leverage your connections and have projects that you can confidently showcase to recruiters. It is just as important as prepping for technical interviews."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Jade",
-	  "role": "Intern",
-	  "company": "Nantronics",
-	  "content": "Apply to whatever you can get your hands on"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Brian",
-	  "role": "DigIt Intern",
-	  "company": "Memorial Kettering Sloan",
-	  "content": "Apply with purpose. Have a reason to applying to a company"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Mamadou",
-	  "role": "Talent Enterprise Data",
-	  "company": "Bloomberg",
-	  "content": "Apply to as many position as possible. Don't give up if you fail an interview."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Md",
-	  "role": "Product Department Intern",
-	  "company": "Arizent",
-	  "content": "Apply from as many avenues as possible, and participate in various programs. Those programs will help increase the opportunities and connections you have that may allow you to even bypass an interview. Applying to many jobs and interviewing is also good interview practice, it can be more valuable to working somewhere off the first try."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Harouna",
-	  "role": "Global Analyst",
-	  "company": "Bank of America",
-	  "content": "know your basics data structure: string, array, Set, HashMap, Heap, BST. Then practice problem solving on leetcode( if you suscribe, you will able to see what type of problems some companies like to ask.)"
-	},
-	{
-	  "cohort": 6,
-	  "name": "anonymous",
-	  "role": "associate software engineer",
-	  "company": "fintech company",
-	  "content": "it's ok to do unpaid internship for a while, if only to generate fodder for interviewing bluffs"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Josh",
-	  "role": "Full Stack Web Application Development Intern",
-	  "company": "CACI International Inc and Subsidiary Companies",
-	  "content": "What worked for me was asking the recruiters what type of interview/questions will be asked during the interview. This helped me to gauge a focus on what I should prepare for. I was then able to spend a week preparing and studying for the interview. I used CTPs resources and asked content from my career coach which was very helpful to give myself a sense of direction and confidence."
-	},
-	{
-	  "cohort": 6,
-	  "name": "Ledio",
-	  "role": "Machine Learning Engineer",
-	  "company": "Weber Shandwick",
-	  "content": "Work on your skills, start difficult projects, and show your excitement. Employers want to see that you care. Good luck!"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Yechiel",
-	  "role": "Data Science Intern",
-	  "company": "Eagle Genomics",
-	  "content": "Get involved in open source projects, it provide experience as well as looks good on resume"
-	},
-	{
-	  "cohort": 6,
-	  "name": "Bikranta",
-	  "role": "Software Engineer",
-	  "company": "JP Morgan Chase & Co",
-	  "content": "Keeping sharp technically throughout the search process. Never stop applying. Reassess your strategy if it's not working. Seek help from mentors. Check your mental health."
-	}
-      ]
+  {
+    "cohort": 6,
+    "name": "Karsh",
+    "role": "Software Engineer Intern",
+    "company": "MetLife",
+    "content": "Network with as many recruiters as you can and Focus on the Behavioral interview aswell as the Technical interview. Most students tend to focus more on the Technical part of the interview since it tends to be more challenging but from my job hunting experience this year, the Behavioral interview can be easy to mess up IF you don't prepare for it so make sure you practice the Behavioral part as well."
+  },
+  {
+    "cohort": 6,
+    "name": "Jonathan",
+    "role": "Php Laravel Full stack intern",
+    "company": "Agile Masters",
+    "content": "Practice Behavioral interviews!!!"
+  },
+  {
+    "cohort": 6,
+    "name": "Zifei",
+    "role": "Software Developer",
+    "company": "TCS",
+    "content": "1. Improve the resume\n2. Practice more\n3. Familiarize yourself with the technology used in the project on your resume before the interview.\n4. Prepare behaver questions in advance"
+  },
+  {
+    "cohort": 6,
+    "name": "Syed",
+    "role": "Data Science Intern",
+    "company": "B. Braun Medical Inc.",
+    "content": "apply anywhere and everywhere, ive applied to well over 100 places"
+  },
+  {
+    "cohort": 6,
+    "name": "Jonathan",
+    "role": "Associate software engineer",
+    "company": "Mindgrub",
+    "content": "NYC is very competitive, applying for remote positions out of state gave me better luck in general. When talking to someone always be very polite and professional. With the company I got an offer from I was able to have a good conversation with everyone I spoke with. I tried to present myself as someone who would be good to work with, not just someone who understands a topic. For coding questions, and hacker rank question, I made sure to explain my taught processes to the interview if they were there. If I was not talking to someone I would leave a comment explain my thought process. Always try to write clean code, and follow best coding practices, such as good naming conventions and more."
+  },
+  {
+    "cohort": 6,
+    "name": "Remi",
+    "role": "Customer Success Associate Manager (Commercial)",
+    "company": "Premise Data Corporation",
+    "content": "Use your network. I was notified of the position through a mutual friend who works in the company."
+  },
+  {
+    "cohort": 6,
+    "name": "Zilong",
+    "role": "Software Engineer Intern",
+    "company": "Dotdash",
+    "content": "Keep on the lookout for job postings, especially the ones where they say they have connections/\"will pass on your name\"/\"contact me if you apply\". Do more career coach & technical interviews to get comfortable with interviewing."
+  },
+  {
+    "cohort": 6,
+    "name": "Zifei",
+    "role": "Intern - Software Development",
+    "company": "Pearson",
+    "content": "Familiarize yourself with the concepts and applications of each technology mentioned on your resume. If the project on your resume is a team development, firmly consider yourself as a team leader."
+  },
+  {
+    "cohort": 6,
+    "name": "Farhene",
+    "role": "Technology Enablement Intern",
+    "company": "Slalom",
+    "content": "Interview prep helped me a lot. Don’t be afraid of interviewing practices. Also make sure to take advantage of city events and workshop events and ask around for LinkedIn! You never know which comes in handy! Also, don’t depend on the “right” internship. A lot of skills from one internship can be transferrable to your future job as long as it remains around your desired career field. Also, KEEP applying! If you feel demotivated and suffer from Imposter’s Syndrome like I did, you have to stop and assess what skills you are able to do whether it’s beginner or pro. Choose a day of the week to go internship hunting! Check out LinkedIn’s internship opportunities because a lot of internships can be found there! I also tried out Ladders 4 Leaders program and this is where I landed my internship! However, without interviewing practices and without studying up in my technologies, I never would have gotten to where I am today! That’s my giant piece of content :3"
+  },
+  {
+    "cohort": 6,
+    "name": "Alex",
+    "role": "Computer Programmer",
+    "company": "Eastern Union Funding",
+    "content": "Networking with other engineers is the best way to get a job. All of my interviews and offers came from other engineers that gave recommendations to me."
+  },
+  {
+    "cohort": 6,
+    "name": "Joseph",
+    "role": "Machine Learning Intern",
+    "company": "Walkspan",
+    "content": "CTP is probably one of the greatest programs that you can be in if you're trying to land a job in the tech industry. I think that aside from being able to practice for technical interviews, CTP helped me prepare for behavioral interviews, as well as how to present myself to the best of my ability in those circumstances. I'd recommend that prior to each interview that you do, you meet with your career coach and practice a mock behavioral and look at what you could refine. Additionally, I would advise to schedule a mock technical prior to an interview - you're put in a position very similar to an actually interview, and there is honestly no better way to prepare than being asked a technical question by a software engineer in the field."
+  },
+  {
+    "cohort": 6,
+    "name": "Allon",
+    "role": "Data Engineering Intern",
+    "company": "Dotdash",
+    "content": "I'd say that other CTP fellows should not fear having to learn new things. If the job isn't in a field you know much about, you can still go for it as long as you think you might be interested in it. I am in the webdev track but somehow got a data science job."
+  },
+  {
+    "cohort": 6,
+    "name": "Asma",
+    "role": "Software Engineer",
+    "company": "JPMorgan & Chase Co.",
+    "content": "I think I'd say not to get too caught up in what works for the majority. Sometimes some strategies like \"LeetCode grinding\" and doing a couple of problems a day doesn't work for everybody, and honestly, for me it led to burn out. Find out what works best for you, and make sure you understand the core concept behind each problem, as opposed to just trying to encounter every problem there is. With the core concept understood, you can tackle any problem."
+  },
+  {
+    "cohort": 6,
+    "name": "Muneeb",
+    "role": "Associate Software Engineer",
+    "company": "Scholastic",
+    "content": "1. Its a numbers game. Ignore the job description experience criteria and keep applying. 2. Use specific search terms for better results. 3. Be able to talk about System Design. Its not optional. It came up in every single interview I had.  4. Know a bit about the internals of your language of choice. For example, for Java, I was asked about JVM specific GC optimizations, spaces etc. For python you could be asked about the GIL. Suffice to say, look up 'top x trick questions about lang y'."
+  },
+  {
+    "cohort": 6,
+    "name": "Dmitriy",
+    "role": "Full Stack Engineer",
+    "company": "Confiant Inc.",
+    "content": "Networking is a must - keep reaching out to people on LinkedIn, not necessarily asking for referrals but just to get to know how they managed to land their position\nKeep applying constantly - every week apply to at least 5 open positions that match your qualifications, and even if they do partially\nDo stuff - in your free time learn how to use popular tools that were not covered in CTP program (CI/CD, testing, additional frameworks, databases, web security, etc.)"
+  },
+  {
+    "cohort": 6,
+    "name": "Joseph",
+    "role": "Global Data Analyst",
+    "company": "Bloomberg LP",
+    "content": "I suggest that you keep pushing yourself. That sounds broad, but in truth, you have to keep attending events (i.e. company events, hackathons). From there, it becomes natural to land an interview and also speak comfortably with other professionals in the field. My interviews were not as technical as they were behavioral. In that sense, and in general, I'd recommend that other CTP fellows leverage their career coaches pre-interview. I had about 4-5 mock behavioral sessions with my career coach. After every session, I felt more confident with myself and was able to translate that confidence to the interviews as well. Though my interview was mainly behavioral, there were some technical questions asked. To prepare, I would recommend that fellows leverage the mock technical interviews: those mock interviews put you in the same setting as an actual interview. I'd also recommend that fellows never stop doing projects. Interviewers will ask you about your experience and what you learned from those experiences/projects."
+  },
+  {
+    "cohort": 6,
+    "name": "Jonathan",
+    "role": "Intern",
+    "company": "Dow Jones",
+    "content": "Prepare for the behavioral interview!"
+  },
+  {
+    "cohort": 6,
+    "name": "Saiful",
+    "role": "Software Engineering Corps Member",
+    "company": "NYC Mayor's Office of the Chief Technology Officer",
+    "content": "(1) Have a cover letter \n\n(2) Behavioral interview questions matter as much as technical interview questions"
+  },
+  {
+    "cohort": 6,
+    "name": "Joseph",
+    "role": "Software Engineer",
+    "company": "Tata Consultancy Service",
+    "content": "Get tons of experience before graduating. Master data structures and algorithms/"
+  },
+  {
+    "cohort": 6,
+    "name": "Mariam",
+    "role": "Virtual Software Engineer Intern",
+    "company": "Xandr",
+    "content": "For me, getting a reference or anyone to boost your resume to recruiters was the best way to an interview. On all other occasions I never even made it to the first round. My best content is to ask around your family and friends first, to see if they have any connections to companies you want to work for. I would also join New York City propelled programs like Ladders for Leaders, as they have a lot of opportunities and students under that program get priority for the jobs they offer. I realized that getting to the phone screen/first round is the hardest part of even having a chance at a role. That reference or resume push gets you the interview and from there it's up to you to show them what you know. Personally, I feel as though I may not be up to par with other people in my discipline, but I know the basics and I think the company saw that I had the basics with which they want to mold me to help them best."
+  },
+  {
+    "cohort": 6,
+    "name": "Konstantinos",
+    "role": "Software Engineer",
+    "company": "Intelligent Automation, Inc",
+    "content": "Referrals / References! It's the best way to get a job honestly."
+  },
+  {
+    "cohort": 6,
+    "name": "Ramiz",
+    "role": "Backend Developer",
+    "company": "SAP",
+    "content": "Keep applying to positions everyday and practice coding questions"
+  },
+  {
+    "cohort": 6,
+    "name": "Anastasiya",
+    "role": "Design Engineer",
+    "company": "Design Commerce Technologies, Inc",
+    "content": "My content is to spend more time working on personal portfolio projects as well as network with people who have similar interests as you. Personal portfolio projects (which include hackahtons, demos, personal projects) really helped me to express my skills and this recent offer that I received  had a lot to do with the projects that the person saw on my website. For networking strategy, I recommend staying in touch with people that you already know while also going to hackathons or other events where like minded people spend their time. In this way, networking will feel natural because there is always something to talk about."
+  },
+  {
+    "cohort": 6,
+    "name": "Jacky",
+    "role": "Associate Software Engineer (Backend)",
+    "company": "Conductor",
+    "content": "Consistently practice your leetcodes and personal projects and trust in the process"
+  },
+  {
+    "cohort": 6,
+    "name": "Jing",
+    "role": "Frontend developer intern",
+    "company": "Basepair",
+    "content": "Just keep applying and keep practicing!"
+  },
+  {
+    "cohort": 6,
+    "name": "Kareem",
+    "role": "Front End Developer/Designer",
+    "company": "BAM Creative",
+    "content": "Never shy away from doing a Cover Letter, even when employers don't necessarily require one. It adds a great personal touch to elevate the first impression you make on your potential employers."
+  },
+  {
+    "cohort": 6,
+    "name": "Alfredo",
+    "role": "Software Engineering Intern",
+    "company": "TracFlo",
+    "content": "Always Apply, Don't Get Discouraged."
+  },
+  {
+    "cohort": 6,
+    "name": "Gabriel",
+    "role": "IT AUDIT",
+    "company": "Nyc comptroller office",
+    "content": "It is hard but possible"
+  },
+  {
+    "cohort": 6,
+    "name": "Alamin",
+    "role": "Associate in Software Developer",
+    "company": "Infosys",
+    "content": "Do not give up, Always practice, specially 2-3 days before the interviews. Do not just stick with the coding interview, review the basic coding questions."
+  },
+  {
+    "cohort": 6,
+    "name": "Masuda",
+    "role": "Technology Intern",
+    "company": "The New York Times",
+    "content": "Don't give up and be genuine. People can tell when you are really invested in your work and their company as opposed to simply looking for a job."
+  },
+  {
+    "cohort": 6,
+    "name": "Chris",
+    "role": "Summer Software Development Analyst",
+    "company": "Citi",
+    "content": "Understand your projects."
+  },
+  {
+    "cohort": 6,
+    "name": "Iman",
+    "role": "Image Recognition Intern",
+    "company": "Framebridge",
+    "content": "Knowing the company that you're interviewing for very well goes a long way on interviews, do your company research beforehand. Don't get discouraged by the amount of applications or interviews you've done and how many of those didn't have a positive outcome, just keep going and know that you'll end up with something that is going to be the best for your experience."
+  },
+  {
+    "cohort": 6,
+    "name": "Christian",
+    "role": "Analyst, Back-End Developer",
+    "company": "Avanade",
+    "content": "Become experts in what interest you, always work of your soft skills just as much as your technical skills"
+  },
+  {
+    "cohort": 6,
+    "name": "Isaiah",
+    "role": "Data Science Intern",
+    "company": "Annalect",
+    "content": "Take advantage of the job postings career coaches and other fellows are posting. As with behavioral interviews for data science roles, prep for on the spot technical questions related to statistics, machine learning, case studies, or technical details about your projects. Within the these interviews, avoid technical jargon and explain things in the most basic form. This will show that you understand and demonstrate that you know how to communicate to a  non-technical audience. Technical interviews, it may vary from white board interviews to a simple one-to-one on the fly quizzing about concepts commonly covered in data science. I prepped using by doing mock interviews for white boarding. Also, I made sure to have a deep understanding of the data science topics rather than memorizing."
+  },
+  {
+    "cohort": 6,
+    "name": "Xiangmin",
+    "role": "Web Developer",
+    "company": "Hunter College Chinese Flagship Program",
+    "content": "I'd say to leverage your connections and have projects that you can confidently showcase to recruiters. It is just as important as prepping for technical interviews."
+  },
+  {
+    "cohort": 6,
+    "name": "Jade",
+    "role": "Intern",
+    "company": "Nantronics",
+    "content": "Apply to whatever you can get your hands on"
+  },
+  {
+    "cohort": 6,
+    "name": "Brian",
+    "role": "DigIt Intern",
+    "company": "Memorial Kettering Sloan",
+    "content": "Apply with purpose. Have a reason to applying to a company"
+  },
+  {
+    "cohort": 6,
+    "name": "Mamadou",
+    "role": "Talent Enterprise Data",
+    "company": "Bloomberg",
+    "content": "Apply to as many position as possible. Don't give up if you fail an interview."
+  },
+  {
+    "cohort": 6,
+    "name": "Md",
+    "role": "Product Department Intern",
+    "company": "Arizent",
+    "content": "Apply from as many avenues as possible, and participate in various programs. Those programs will help increase the opportunities and connections you have that may allow you to even bypass an interview. Applying to many jobs and interviewing is also good interview practice, it can be more valuable to working somewhere off the first try."
+  },
+  {
+    "cohort": 6,
+    "name": "Harouna",
+    "role": "Global Analyst",
+    "company": "Bank of America",
+    "content": "know your basics data structure: string, array, Set, HashMap, Heap, BST. Then practice problem solving on leetcode( if you suscribe, you will able to see what type of problems some companies like to ask.)"
+  },
+  {
+    "cohort": 6,
+    "name": "anonymous",
+    "role": "associate software engineer",
+    "company": "fintech company",
+    "content": "it's ok to do unpaid internship for a while, if only to generate fodder for interviewing bluffs"
+  },
+  {
+    "cohort": 6,
+    "name": "Josh",
+    "role": "Full Stack Web Application Development Intern",
+    "company": "CACI International Inc and Subsidiary Companies",
+    "content": "What worked for me was asking the recruiters what type of interview/questions will be asked during the interview. This helped me to gauge a focus on what I should prepare for. I was then able to spend a week preparing and studying for the interview. I used CTPs resources and asked content from my career coach which was very helpful to give myself a sense of direction and confidence."
+  },
+  {
+    "cohort": 6,
+    "name": "Ledio",
+    "role": "Machine Learning Engineer",
+    "company": "Weber Shandwick",
+    "content": "Work on your skills, start difficult projects, and show your excitement. Employers want to see that you care. Good luck!"
+  },
+  {
+    "cohort": 6,
+    "name": "Yechiel",
+    "role": "Data Science Intern",
+    "company": "Eagle Genomics",
+    "content": "Get involved in open source projects, it provide experience as well as looks good on resume"
+  },
+  {
+    "cohort": 6,
+    "name": "Bikranta",
+    "role": "Software Engineer",
+    "company": "JP Morgan Chase & Co",
+    "content": "Keeping sharp technically throughout the search process. Never stop applying. Reassess your strategy if it's not working. Seek help from mentors. Check your mental health."
+  }
+]

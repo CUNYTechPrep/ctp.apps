@@ -22,16 +22,29 @@
       }
     }
   },
-  "projects": {
-    "ctp.alumni.advice": {
-      "tags": []
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "css",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
     },
-    "ctp.alumni.app": {
-      "tags": []
-    },
-    "ctp.alumni.app-e2e": {
-      "tags": [],
-      "implicitDependencies": ["ctp.alumni.app"]
+    "@nrwl/gatsby": {
+      "application": {
+        "style": "css"
+      }
     }
-  }
+  },
+  "defaultProject": "ctp.alumni.app"
 }
