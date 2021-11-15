@@ -9,14 +9,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          npm ci
-          npm run affected:test
-          npm run build
-          npm run dep-graph:build
-          mv ./apps/ctp.alumni.slack.code-of-conduct ./apps/ctp.alumni.app/public
       - uses: actions/setup-python@v1
       - uses: BSFishy/pip-action@v1
         with:
@@ -24,7 +16,15 @@ jobs:
       - name: Install and Build Juypter Book 🔧
         run: |
           jupyter-book build ./apps/ctp.alumni.survey/ --path-output=apps/ctp.alumni.survey/
-          mv ./apps/ctp.alumni.survey/_build/html/ ./apps/ctp.alumni.app/public/ctp.alumni.survey
+          mv ./apps/ctp.alumni.survey/_build/html/ ./apps/ctp.alumni.app/static/ctp.alumni.survey
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run affected:test
+          npm run build
+          npm run dep-graph:build
+          mv ./apps/ctp.alumni.slack.code-of-conduct ./apps/ctp.alumni.app/public
+   
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
