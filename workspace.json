@@ -114,26 +114,49 @@
       },
       "tags": [],
       "implicitDependencies": ["ctp.alumni.app"]
-    }
-  },
-  "schematics": {
-    "@nrwl/react": {
-      "application": {
-        "style": "css",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint"
-      }
     },
-    "@nrwl/gatsby": {
-      "application": {
-        "style": "css"
+    "ctp.alumni.newsletter": {
+      "root": "libs/ctp.alumni.newsletter",
+      "sourceRoot": "libs/ctp.alumni.newsletter/src",
+      "projectType": "library",
+      "tags": [],
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/ctp.alumni.newsletter",
+            "tsConfig": "libs/ctp.alumni.newsletter/tsconfig.lib.json",
+            "project": "libs/ctp.alumni.newsletter/package.json",
+            "entryFile": "libs/ctp.alumni.newsletter/src/index.js",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/ctp.alumni.newsletter/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/ctp.alumni.newsletter/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ctp.alumni.newsletter"],
+          "options": {
+            "jestConfig": "libs/ctp.alumni.newsletter/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
       }
     }
   }
