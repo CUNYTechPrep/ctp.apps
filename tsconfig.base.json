@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@ctp.apps/test": ["libs/test/src/index.ts"],
+      "@ctp/alumni.newsletter": ["libs/ctp.alumni.newsletter/src/index.ts"],
       "@cuny-tech-prep/ctp.alumni.advice": [
         "libs/ctp.alumni.advice/src/index.ts"
       ]
