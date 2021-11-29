@@ -32,8 +32,17 @@ export const CtpAlumniNewsletter = (props) => (
   <Section>
     <Mrkdwn >
       :flashing_lights: *EVENT INFORMATION* :flashing_lights:
-    
     </Mrkdwn>
+    </Section>
+    <Section>
+    <Mrkdwn >
+      <br/>
+        <b>
+        <a href="https://cuny-tech-prep-demo-night-fall2021.eventbrite.com/?aff=AlumniNewsLetter"> 
+        Please Share This Link With Your Networks  
+        </a>
+      </b>
+      </Mrkdwn >
     <Field>
       :five:
       Break Out Rooms
@@ -52,12 +61,18 @@ export const CtpAlumniNewsletter = (props) => (
       <br />
       Data Science Projects
     </Field>
-    Come on down and share the news with industry partners 
-      https://cuny-tech-prep-demo-night-fall2021.eventbrite.com/?aff=AlumniSlack
+ 
     </Section>
+  <Section>
+    <b>Can't Attend But Want to Ask A Question</b>
+    &nbsp;
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScsGFx8jty8t8RN_weeiIoknl3VBYljb6OraZ76UW1joeAQ3A/viewform">
+      use this form
+    </a>
+  </Section>
     <Divider />
     <Section>
-      *Reminder* We are offering CTP alumni like you support with:
+     <p> *Reminder* We are offering CTP alumni like you support with:</p>
     </Section>
     <Actions>
     <Overflow actionId="overflow_menu">
@@ -75,6 +90,11 @@ export const CtpAlumniNewsletter = (props) => (
     </Mrkdwn>
   </Section>
     </Context>
+    <Section>
+    <Mrkdwn >
+      `*Let us know you read this by reacting with an emoji!*`
+      </Mrkdwn>
+    </Section>
   </Blocks>
   );
 
