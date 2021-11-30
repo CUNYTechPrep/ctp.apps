@@ -1,4 +1,5 @@
 import { WebClient } from '@slack/web-api';
+import { CtpAlumniNewsletter } from '../ctp.alumni.newsletter'
 
 export interface UseSlackBot {
   channel: string;
@@ -19,6 +20,7 @@ export const useSlackBot = ({channel, blocks}:any) =>
 // Run it from the command line
 if(process.env.NODE_ENV ==='production'){
   useSlackBot({
-    channel: process.env.SLACK_NEWSLETTER_CHANNEL
+    channel: process.env.SLACK_NEWSLETTER_CHANNEL,
+    blocks: CtpAlumniNewsletter()
   })
 }
