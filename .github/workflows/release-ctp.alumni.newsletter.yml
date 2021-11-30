@@ -30,8 +30,9 @@ jobs:
         with:
           node-version: 14
       - run: npm config set registry https://npm.pkg.github.com/cunytechprep
-      - run: echo ${NODE_AUTH_TOKEN}
+      - run: echo $NODE_AUTH_TOKEN
       - run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+      - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: node ctp.alumni.newsletter.umd.js 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
