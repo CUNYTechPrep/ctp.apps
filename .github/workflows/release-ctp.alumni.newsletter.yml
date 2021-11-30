@@ -29,12 +29,16 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
+      - name: Authenticate with GitHub package registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES_PAT }}" > ~/.npmrc
+      - name: npm install
+      - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: npm config set registry https://npm.pkg.github.com/cunytechprep
       - run: echo $NODE_AUTH_TOKEN
-      - run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+      - run: echo "//npm.pkg.github.com/:_authToken=${READ_PACKAGES_PAT}" > ~/.npmrc
       - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: node ctp.alumni.newsletter.umd.js 
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
+          READ_PACKAGES_PAT: ${{ secrets.READ_PACKAGES_PAT }}
           NODE_ENV: ${{secrets.NODE_ENV}} 
           SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
