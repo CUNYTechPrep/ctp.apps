@@ -25,6 +25,10 @@ jobs:
     permissions:
       contents: read
       packages: write
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
+      NODE_ENV: ${{secrets.NODE_ENV}} 
+      SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
     steps:
       - uses: actions/setup-node@v2
         with:
@@ -34,7 +38,3 @@ jobs:
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES_PAT }}" > ~/.npmrc
       - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: node ctp.alumni.newsletter.umd.js 
-        env:
-          READ_PACKAGES_PAT: ${{ secrets.READ_PACKAGES_PAT }}
-          NODE_ENV: ${{secrets.NODE_ENV}} 
-          SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
