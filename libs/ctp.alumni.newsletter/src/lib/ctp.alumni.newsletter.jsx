@@ -15,10 +15,10 @@ export const CtpAlumniNewsletter = (props) => (
     <Section>
       :calendar: |&nbsp;&nbsp;&nbsp;<b>UPCOMING EVENTS</b>&nbsp;&nbsp;| :calendar:
     </Section>
-      <Image src={"https://cunytechprep.nyc/img/banner-logo.png"} alt="Invite Image" />
+      <Image src={"https://raw.githubusercontent.com/CUNYTechPrep/ctp.apps/master/libs/ctp.alumni.newsletter/src/lib/assets/C7DemoNightInvite.gif"} alt="Invite Image" />
     <Section>
       <b>
-      `12/14/2021` CUNY Tech Prep: Demo Night Fall 2021
+      `{new Date().toISOString()}` CUNY Tech Prep: Demo Night Fall 2021
       </b>
     <img src="https://cunytechprep.nyc/img/banner-logo.png" alt="yhatt" />
   </Section>
