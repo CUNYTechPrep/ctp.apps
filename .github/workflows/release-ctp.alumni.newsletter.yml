@@ -37,4 +37,5 @@ jobs:
           scope: '@cunytechprep'
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES_PAT }}" > ~/.npmrc
       - run: npm install @cunytechprep/ctp.alumni.newsletter
-      - run: node ctp.alumni.newsletter.umd.js 
+      - run: ls -lA
+      - run: node ./node_modules/@cunytechprep/ctp.alumni.newsletter/ctp.alumni.newsletter.umd.js 
