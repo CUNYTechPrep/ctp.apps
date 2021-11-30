@@ -29,9 +29,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
+          registry-url: https://npm.pkg.github.com/
+          scope: '@cunytechprep'
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES_PAT }}" > ~/.npmrc
-      - run: npm config set registry https://npm.pkg.github.com/cunytechprep
-      - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: node ctp.alumni.newsletter.umd.js 
         env:
