@@ -1,0 +1,42 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Release Newsletter Bot 
+
+on:
+  push:
+    branches:
+      - release/ctp.alumni.newsletter  
+
+jobs:
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 14
+  #     - run: npm ci
+  #     - run: npm test
+      
+  run-release:
+    #needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
+      NODE_ENV: ${{secrets.NODE_ENV}} 
+      SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
+      ALUMNI_SLACK_TOKEN: ${{secrets.ALUMNI_SLACK_TOKEN}} 
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://npm.pkg.github.com/
+          scope: '@cunytechprep'
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES_PAT }}" > ~/.npmrc
+      - run: npm install @cunytechprep/ctp.alumni.newsletter
+      - run: ls -lA
+      - run: node ./node_modules/@cunytechprep/ctp.alumni.newsletter/ctp.alumni.newsletter.umd.js 

@@ -1,6 +1,6 @@
 {
   "name": "@cunytechprep/ctp.alumni.newsletter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dependencies": {
     "@slack/web-api": "^6.5.1",
     "jsx-slack": "^4.4.3"
