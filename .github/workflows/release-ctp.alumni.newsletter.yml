@@ -33,6 +33,6 @@ jobs:
       - run: npm install @cunytechprep/ctp.alumni.newsletter
       - run: node ctp.alumni.newsletter.umd.js 
         env:
-          NODE_AUTH_TOKEN: ${{secrets.AUTHTOKEN}}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           NODE_ENV: ${{secrets.NODE_ENV}} 
           SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
