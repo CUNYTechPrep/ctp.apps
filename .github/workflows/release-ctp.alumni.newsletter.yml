@@ -29,6 +29,7 @@ jobs:
       NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
       NODE_ENV: ${{secrets.NODE_ENV}} 
       SLACK_NEWSLETTER_CHANNEL: ${{secrets.SLACK_NEWSLETTER_CHANNEL}} 
+      ALUMNI_SLACK_TOKEN: ${{secrets.ALUMNI_SLACK_TOKEN}} 
     steps:
       - uses: actions/setup-node@v2
         with:
