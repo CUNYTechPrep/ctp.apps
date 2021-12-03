@@ -1,4 +1,4 @@
-# Ctp.Apps @cuny-tech-prep/\*
+# Ctp.Apps @cunytechprep/\*
 
 <img src="https://cunytechprep.nyc/img/banner-logo.png" align="left" width="152px" height="152px"/>
 <img align="left" width="0" height="162px" hspace="10"/>
