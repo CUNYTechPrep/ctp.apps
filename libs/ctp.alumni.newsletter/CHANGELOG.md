@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/CUNYTechPrep/ctp.apps/compare/v1.1.0...v1.1.2) (2021-12-03)
+
+
+### Bug Fixes
+
+* **ctp.alumni.newsletter:** publish config update ([6026523](https://github.com/CUNYTechPrep/ctp.apps/commit/60265230399085f3d7df2002391c6d7d861a9c71))
+
 ## [1.1.0](https://github.com/CUNYTechPrep/ctp.apps/compare/v0.2.2-0...v1.1.0) (2021-12-03)
 ### Bug Fixes
 
