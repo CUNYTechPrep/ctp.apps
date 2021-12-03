@@ -18,7 +18,7 @@ export const CtpAlumniNewsletter = (props) => (
       <Image src={"https://raw.githubusercontent.com/CUNYTechPrep/ctp.apps/master/libs/ctp.alumni.newsletter/src/lib/assets/C7DemoNightInvite.gif"} alt="Invite Image" />
     <Section>
       <b>
-      `{new Date().toISOString()}` CUNY Tech Prep: Demo Night Fall 2021
+      `*December 6, 2021*` CUNY Tech Prep: Demo Night Fall 2021
       </b>
     <img src="https://cunytechprep.nyc/img/banner-logo.png" alt="yhatt" />
   </Section>
@@ -48,7 +48,7 @@ export const CtpAlumniNewsletter = (props) => (
       Break Out Rooms
     </Field>
     <Field>
-      :four::six: 
+      :five::zero: 
       <br />
       Teams
     </Field>
@@ -57,7 +57,7 @@ export const CtpAlumniNewsletter = (props) => (
       Web Dev Projects
     </Field>
     <Field>
-      :one::seven: 
+      :two::zero: 
       <br />
       Data Science Projects
     </Field>
@@ -66,7 +66,7 @@ export const CtpAlumniNewsletter = (props) => (
   <Section>
     <b>Can't Attend But Want to Ask A Question</b>
     &nbsp;
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScsGFx8jty8t8RN_weeiIoknl3VBYljb6OraZ76UW1joeAQ3A/viewform">
+    <a href="https://forms.gle/Sgr7Xy46RrmfsSFf9">
       use this form
     </a>
   </Section>
@@ -86,7 +86,7 @@ export const CtpAlumniNewsletter = (props) => (
     <Section>
     <Mrkdwn >
       :pushpin: Do you have something to include in the newsletter? Please make a &nbsp;
-      <a href="https://github.com/CUNYTechPrep/ctp.apps"> pull-request </a>
+      <a href="https://github.com/CUNYTechPrep/ctp.apps/edit/master/libs/ctp.alumni.newsletter/src/lib/ctp.alumni.newsletter.jsx"> pull-request </a>
     </Mrkdwn>
   </Section>
     </Context>
