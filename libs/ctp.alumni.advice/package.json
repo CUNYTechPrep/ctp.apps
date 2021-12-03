@@ -1,6 +1,6 @@
 {
   "name": "@cunytechprep/ctp.alumni.advice",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "git://github.com/CUNYTechPrep/ctp.apps",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
