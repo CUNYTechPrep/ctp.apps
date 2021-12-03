@@ -18,7 +18,7 @@ export const CtpAlumniNewsletter = (props) => (
       <Image src={"https://raw.githubusercontent.com/CUNYTechPrep/ctp.apps/master/libs/ctp.alumni.newsletter/src/lib/assets/C7DemoNightInvite.gif"} alt="Invite Image" />
     <Section>
       <b>
-      `*December 6, 2021*` CUNY Tech Prep: Demo Night Fall 2021
+      `*December 14, 2021*` CUNY Tech Prep: Demo Night Fall 2021
       </b>
     <img src="https://cunytechprep.nyc/img/banner-logo.png" alt="yhatt" />
   </Section>
@@ -85,7 +85,7 @@ export const CtpAlumniNewsletter = (props) => (
     <Context>
     <Section>
     <Mrkdwn >
-      :pushpin: Do you have something to include in the newsletter? Please make a &nbsp;
+      :pushpin: Do you have something to include in the newsletter? Please make a&nbsp;
       <a href="https://github.com/CUNYTechPrep/ctp.apps/edit/master/libs/ctp.alumni.newsletter/src/lib/ctp.alumni.newsletter.jsx"> pull-request </a>
     </Mrkdwn>
   </Section>
