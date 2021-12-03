@@ -19,8 +19,10 @@ export const useSlackBot = ({channel, blocks}:any) =>
 
 // Run it from the command line
 if(process.env.NODE_ENV ==='production'){
+  const channel = process.env.SLACK_NEWSLETTER_CHANNEL
+  console.log("Sending Payload To",channel)
   useSlackBot({
-    channel: process.env.SLACK_NEWSLETTER_CHANNEL,
+    channel,
     blocks: CtpAlumniNewsletter()
   })
 }
