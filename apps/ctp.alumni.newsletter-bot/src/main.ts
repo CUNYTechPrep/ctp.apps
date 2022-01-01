@@ -1,6 +1,3 @@
-if(process.env.NODE_ENV !== "production") {
-  require('dotenv').config();
-}
 const { App } = require('@slack/bolt');
 import CtpAlumniNewsletter from '@cunytechprep/ctp.alumni.newsletter';
 /* 
