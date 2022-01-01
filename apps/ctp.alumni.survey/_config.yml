@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title:  CUNY Tech Prep Alumni Survey
-author: Samuel Witke @cuny-tech-prep 
+author: Samuel Witke @cunytechprep 
 logo: logo.png
 
 # Force re-execution of notebooks on each build.

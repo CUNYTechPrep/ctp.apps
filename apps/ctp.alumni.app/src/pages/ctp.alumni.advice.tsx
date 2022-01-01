@@ -1,4 +1,4 @@
-import { App } from '@cuny-tech-prep/ctp.alumni.advice';
+import { App } from '@cunytechprep/ctp.alumni.advice';
 
 /* eslint-disable-next-line */
 export interface CtpAlumniAdviceProps {}
