@@ -1,12 +1,3 @@
 {
-  "presets": [
-    [
-      "@nrwl/react/babel",
-      {
-        "runtime": "automatic",
-        "importSource": "jsx-slack"
-      }
-    ]
-  ],
-  "plugins": []
+  "presets": [["@nrwl/web/babel", { "useBuiltIns": "usage" }]]
 }

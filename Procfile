@@ -1,0 +1,1 @@
+web: npm run deploy:ctp.alumni.newsletter-bot 

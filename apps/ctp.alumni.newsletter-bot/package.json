@@ -1,0 +1,17 @@
+{
+  "name": "@cunytechprep/ctp.alumni.newsletter-bot",
+  "version": "2.0.0",
+  "description": "Getting Started ⚡️ Bolt for JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "ngrok": "ngrok http 3000",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.6.0",
+    "dotenv": "^10.0.0",
+    "ngrok": "^4.2.2"
+  }
+}

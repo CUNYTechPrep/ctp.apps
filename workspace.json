@@ -119,34 +119,23 @@
       "root": "libs/ctp.alumni.newsletter",
       "sourceRoot": "libs/ctp.alumni.newsletter/src",
       "projectType": "library",
-      "tags": [],
       "architect": {
         "build": {
-          "builder": "@nrwl/web:package",
+          "builder": "@nrwl/node:package",
           "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/libs/ctp.alumni.newsletter",
             "tsConfig": "libs/ctp.alumni.newsletter/tsconfig.lib.json",
-            "project": "libs/ctp.alumni.newsletter/package.json",
-            "entryFile": "libs/ctp.alumni.newsletter/src/index.js",
-            "external": ["react/jsx-runtime"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/ctp.alumni.newsletter/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "packageJson": "libs/ctp.alumni.newsletter/package.json",
+            "main": "libs/ctp.alumni.newsletter/src/index.ts",
+            "assets": ["libs/ctp.alumni.newsletter/*.md"]
           }
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": [
-              "libs/ctp.alumni.newsletter/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["libs/ctp.alumni.newsletter/**/*.ts"]
           }
         },
         "test": {
@@ -157,7 +146,60 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
+    },
+    "ctp.alumni.newsletter-bot": {
+      "root": "apps/ctp.alumni.newsletter-bot",
+      "sourceRoot": "apps/ctp.alumni.newsletter-bot/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/ctp.alumni.newsletter-bot",
+            "main": "apps/ctp.alumni.newsletter-bot/src/main.ts",
+            "tsConfig": "apps/ctp.alumni.newsletter-bot/tsconfig.app.json",
+            "assets": ["apps/ctp.alumni.newsletter-bot/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/ctp.alumni.newsletter-bot/src/environments/environment.ts",
+                  "with": "apps/ctp.alumni.newsletter-bot/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "ctp.alumni.newsletter-bot:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/ctp.alumni.newsletter-bot/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/ctp.alumni.newsletter-bot"],
+          "options": {
+            "jestConfig": "apps/ctp.alumni.newsletter-bot/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
     },
     "workspace": {
       "root": ".",

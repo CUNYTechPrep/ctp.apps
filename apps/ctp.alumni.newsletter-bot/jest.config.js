@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ctp.alumni.newsletter',
+  displayName: 'ctp.alumni.newsletter-bot',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -8,8 +8,8 @@ module.exports = {
   },
   testEnvironment: 'node',
   transform: {
-    '^.+\\.[tj]sx?$': 'ts-jest',
+    '^.+\\.[tj]s$': 'ts-jest',
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/ctp.alumni.newsletter',
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  coverageDirectory: '../../coverage/apps/ctp.alumni.newsletter-bot',
 };

@@ -1,18 +1,4 @@
 {
   "name": "@cunytechprep/ctp.alumni.newsletter",
-  "version": "1.1.2",
-  "dependencies": {
-    "@slack/web-api": "^6.5.1",
-    "jsx-slack": "^4.4.3"
-  },
-  "scripts": {
-    "release": "standard-version"
-  },
-  "repository": "git://github.com/CUNYTechPrep/ctp.apps",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "devDependencies": {
-    "standard-version": "^9.3.2"
-  }
+  "version": "2.0.0"
 }
