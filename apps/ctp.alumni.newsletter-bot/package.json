@@ -11,7 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^3.6.0",
-    "dotenv": "^10.0.0",
     "ngrok": "^4.2.2"
   }
 }
