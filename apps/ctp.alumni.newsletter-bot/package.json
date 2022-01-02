@@ -4,13 +4,14 @@
   "description": "Getting Started ⚡️ Bolt for JavaScript",
   "main": "app.js",
   "scripts": {
-    "ngrok": "ngrok http 3000",
-    "start": "node app.js",
+    "start": "nx run ctp.alumni.newsletter-bot:serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^3.6.0",
-    "ngrok": "^4.2.2"
+    "@slack/bolt": "^3.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }

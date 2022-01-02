@@ -10,6 +10,8 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
@@ -17,7 +19,9 @@
     "baseUrl": ".",
     "paths": {
       "@ctp.apps/test": ["libs/test/src/index.ts"],
-      "@cunytechprep/ctp.alumni.newsletter": ["libs/ctp.alumni.newsletter/src/index.ts"],
+      "@cunytechprep/ctp.alumni.newsletter": [
+        "libs/ctp.alumni.newsletter/src/index.ts"
+      ],
       "@cunytechprep/ctp.alumni.advice": ["libs/ctp.alumni.advice/src/index.ts"]
     }
   },

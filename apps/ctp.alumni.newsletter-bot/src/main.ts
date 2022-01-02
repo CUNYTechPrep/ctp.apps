@@ -1,5 +1,9 @@
-const { App } = require('@slack/bolt');
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 import {
+  appActions,
+  appEvents,
   messageListeners,
 } from '@cunytechprep/ctp.alumni.newsletter';
 /* 
@@ -7,7 +11,7 @@ This sample slack application uses SocketMode
 For the companion getting started setup guide, 
 see: https://slack.dev/bolt-js/tutorial/getting-started 
 */
-
+import { App } from '@slack/bolt';
 // Initializes your app with your bot token and app token
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -16,39 +20,21 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
-const welcomeChannelId = '#introductions';
-app.event('team_join', async ({ event, client, logger }) => {
-  try {
-    // Call chat.postMessage with the built-in client
-    const result = await client.chat.postMessage({
-      channel: welcomeChannelId,
-      text: `Welcome to the team, <@${event.user}>! 🎉 You can introduce yourself in this channel.`,
-    });
-    logger.info(result);
-  } catch (error) {
-    logger.error(error);
-  }
-});
-
-
-app.action('thank_you_for_clicking', async ({ body, message }) => {
-  app.client.chat.postEphemeral({
-    token: process.env.SLACK_BOT_TOKEN,
-    channel: body.channel.id,
-    user: body.user.id,
-    text: `Hey @${body.user.name}. Thank you for clicking`,
-  });
-});
-
 (async () => {
   // Start your app
   for (let [key, asyncFunction] of Object.entries(messageListeners)) {
-    const regx = new RegExp(key)
+    const regx = new RegExp(key);
     console.log('loading message listeners', regx);
     app.message(regx, asyncFunction);
   }
-
-  await app.start(process.env.PORT || 3000);
-
-  console.log('⚡️ Bolt app is running!');
+  for (let [key, asyncFunction] of Object.entries(appActions)) {
+    console.log('loading action listeners', key);
+    app.action(key, asyncFunction);
+  }
+  for (let [key, asyncFunction] of Object.entries(appEvents)) {
+    console.log('loading event listeners', key);
+    app.event(key, asyncFunction);
+  }
+  await app.start(parseInt(process.env.PORT) || 3000);
+  console.log('⚡ Bot is running! ⚡');
 })();
