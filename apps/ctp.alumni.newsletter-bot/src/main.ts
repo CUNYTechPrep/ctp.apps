@@ -1,5 +1,7 @@
 const { App } = require('@slack/bolt');
-import CtpAlumniNewsletter from '@cunytechprep/ctp.alumni.newsletter';
+import {
+  messageListeners,
+} from '@cunytechprep/ctp.alumni.newsletter';
 /* 
 This sample slack application uses SocketMode
 For the companion getting started setup guide, 
@@ -12,12 +14,6 @@ const app = new App({
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET,
-});
-
-app.message('ping', async ({ message, ack, say }) => {
-  await say({
-   text: `<@${message.user}>. pong :tennis:`,
-  });
 });
 
 const welcomeChannelId = '#introductions';
@@ -34,25 +30,6 @@ app.event('team_join', async ({ event, client, logger }) => {
   }
 });
 
-// Listens to incoming messages that contain "hello"
-app.message(/events/, async ({ message, event, client, say, body, ...rest }) => {
-  try {
-    // const { user } = await client.users.info({
-    //   token: process.env.SLACK_BOT_TOKEN,
-    //   user: message.user,
-    // });
-    await say({
-      blocks: CtpAlumniNewsletter({ user: message.user }),
-    });
-  } catch (e) {
-    app.client.chat.postEphemeral({
-      token: process.env.SLACK_BOT_TOKEN,
-      channel: body.channel.id,
-      user: body.user.id,
-      text: `Error ${e}`,
-    });
-  }
-});
 
 app.action('thank_you_for_clicking', async ({ body, message }) => {
   app.client.chat.postEphemeral({
@@ -65,6 +42,12 @@ app.action('thank_you_for_clicking', async ({ body, message }) => {
 
 (async () => {
   // Start your app
+  for (let [key, asyncFunction] of Object.entries(messageListeners)) {
+    const regx = new RegExp(key)
+    console.log('loading message listeners', regx);
+    app.message(regx, asyncFunction);
+  }
+
   await app.start(process.env.PORT || 3000);
 
   console.log('⚡️ Bolt app is running!');
