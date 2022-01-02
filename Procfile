@@ -1,1 +1,1 @@
-web: npm run deploy:ctp.alumni.newsletter-bot 
+worker: npm run deploy:ctp.alumni.newsletter-bot 
