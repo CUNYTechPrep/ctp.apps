@@ -140,7 +140,7 @@
       "elements": [
         {
           "type": "mrkdwn",
-          "text": ":pushpin: Do you have something to include in the newsletter? Please make a <https://github.com/CUNYTechPrep/ctp.apps/edit/master/libs/ctp.alumni.newsletter/src/lib/index.ts| pull-request>"
+          "text": ":pushpin: Do you have something to include in the newsletter? Please make a <https://github.com/CUNYTechPrep/ctp.apps/edit/master/libs/ctp.alumni.newsletter | pull-request>"
         }
       ]
     },{
