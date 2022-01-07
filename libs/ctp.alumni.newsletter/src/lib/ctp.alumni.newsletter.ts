@@ -9,6 +9,7 @@ import Config from '../../package.json'
  * @return {*}  {*}
  */
 export async function ctpAlumniNewsletter({ user }): Promise<any> {
+  const newsLetter = [...NewsLetter]
   const text = {
     type: 'context',
     elements: [
@@ -18,7 +19,7 @@ export async function ctpAlumniNewsletter({ user }): Promise<any> {
       },
     ],
   };
-  NewsLetter.splice(1, 0, text);
+  newsLetter.splice(1, 0, text);
 
   const status = {
     type: 'context',
@@ -29,7 +30,7 @@ export async function ctpAlumniNewsletter({ user }): Promise<any> {
       },
     ],
   }
-  NewsLetter.splice(NewsLetter.length-1, 0, status);
+  newsLetter.splice(NewsLetter.length-1, 0, status);
 
-  return NewsLetter;
+  return newsLetter;
 }

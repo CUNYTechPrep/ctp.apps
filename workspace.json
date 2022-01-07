@@ -201,6 +201,46 @@
       },
       "tags": []
     },
+    "ctp.alumni.newsletter-src-lib-topic-of-the-week": {
+      "root": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week",
+      "sourceRoot": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/ctp.alumni.newsletter/src/lib/topic-of-the-week",
+            "tsConfig": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/tsconfig.lib.json",
+            "packageJson": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/package.json",
+            "main": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/src/index.ts",
+            "assets": [
+              "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/*.md"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/ctp.alumni.newsletter/src/lib/topic-of-the-week"
+          ],
+          "options": {
+            "jestConfig": "libs/ctp.alumni.newsletter/src/lib/topic-of-the-week/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "workspace": {
       "root": ".",
       "architect": {

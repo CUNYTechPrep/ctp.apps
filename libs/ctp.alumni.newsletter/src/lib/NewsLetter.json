@@ -10,7 +10,7 @@
 			"type": "context",
 			"elements": [
 				{
-					"text": " | CUNY Tech Prep Event Announcements",
+					"text": "CUNY Tech Prep Event Announcements",
 					"type": "mrkdwn"
 				}
 			]
@@ -114,6 +114,13 @@
 					}
 				],
 				"action_id": "multi_static_select-action"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*You can learn more about being an `Alumni Employer Representative` and indicate interest <https://forms.gle/1yg7d3DfiK4w7v1i6|here.>*"
 			}
 		},
 		{

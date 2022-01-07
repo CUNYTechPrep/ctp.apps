@@ -1,0 +1,40 @@
+[
+  {
+    "type": "header",
+    "text": {
+      "type": "plain_text",
+      "text": ":tada: Topic Of The Week :tada:"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "This is an opportunity to share your expert feedback, and mingle with talented, job-ready tech fellows !",
+      "verbatim": false
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "header",
+    "text": {
+      "type": "plain_text",
+      "text": "Todays The Topic Of The Week :book: ",
+      "emoji": true
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "context",
+    "elements": [
+      {
+        "type": "mrkdwn",
+        "text": ":pushpin: Still looking for more TODW - submit a topic to be discuessed. Submit your ideas <https://forms.gle/JgcYVBZxLSJ9nEs78|here>\n https://forms.gle/JgcYVBZxLSJ9nEs78  "
+      }
+    ]
+  }
+]
