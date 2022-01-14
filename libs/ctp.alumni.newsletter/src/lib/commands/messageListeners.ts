@@ -45,33 +45,33 @@ export const messageListeners = {
       });
     }
   },
-  // '#totw': async function ({
-  //   message,
-  //   event,
-  //   client,
-  //   say,
-  //   body,
-  // }): Promise<any> {
-  //   try {
-  //     const { user } = await client.users.info({
-  //       token: process.env.SLACK_BOT_TOKEN,
-  //       user: message.user,
-  //     });
-  //     if (user.is_admin) {
-  //       await say({
-  //         blocks: await ctpAlumniNewsletterSrcLibTopicOfTheWeek(client),
-  //       });
-  //     }
-  //     else{
-  //       throw Error("User Not Authorized To Run totw")
-  //     }
-  //   } catch (e) {
-  //     client.chat.postEphemeral({
-  //       token: process.env.SLACK_BOT_TOKEN,
-  //       channel: message.channel,
-  //       user: message.user,
-  //       text: `Error ${e}`,
-  //     });
-  //   }
-  // },
+  '#topic-of-the-week': async function ({
+    message,
+    event,
+    client,
+    say,
+    body,
+  }): Promise<any> {
+    try {
+      const { user } = await client.users.info({
+        token: process.env.SLACK_BOT_TOKEN,
+        user: message.user,
+      });
+      //if (user.is_admin) {
+        await say({
+          blocks: await ctpAlumniNewsletterSrcLibTopicOfTheWeek(client),
+        });
+      //}
+      //else{
+       // throw Error("User Not Authorized To Run totw")
+      //}
+    } catch (e) {
+      client.chat.postEphemeral({
+        token: process.env.SLACK_BOT_TOKEN,
+        channel: message.channel,
+        user: message.user,
+        text: `Error ${e}`,
+      });
+    }
+  },
 };

@@ -94,8 +94,6 @@ async function getTopVotes(topThree, client): Promise<Array<any>> {
 
 export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<any> {
   const blocks = [...Blocks];
-  console.log(await db.find(
-  ));
   const docs = await db.find({
     Read: ""
   });
@@ -152,6 +150,5 @@ export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<a
       }
     })
   }
-
   return blocks;
 }

@@ -1,4 +1,4 @@
-const welcomeChannelId = '#introductions';
+const welcomeChannelId = '#totw-test';
 /*
  * https://api.slack.com/events
  * You can listen to any Events API event using the event() method after subscribing to it in your app configuration. 
