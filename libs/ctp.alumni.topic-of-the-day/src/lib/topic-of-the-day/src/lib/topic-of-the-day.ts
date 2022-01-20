@@ -98,11 +98,12 @@ export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<a
     Read: ""
   });
 
+
   const votes = countVotes(docs).sort((a, b) => (a.voteCounts > b.voteCounts) ? 1 : -1)
   const [topVote] = votes
   if (topVote) {
     const submitted = topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] ? topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] : "Anonymous";
-    const topic = topVote['Message/Topic (please add a URL link if there is one) *'] ? topVote['Message/Topic (please add a URL link if there is one) *'] : "No Topic This Week Please Add More To The Google Form"
+    const topic = topVote['Message/Topic (please add a URL link if there is one) *'] ? topVote['Message/Topic (please add a URL link if there is one) *'] : "No Topic Today Please Add More To The Google Form"
     const topOfTheWeekBlock = [
       {
         "type": "section",

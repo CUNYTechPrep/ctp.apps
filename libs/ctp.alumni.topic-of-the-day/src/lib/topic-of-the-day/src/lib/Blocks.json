@@ -3,7 +3,7 @@
     "type": "header",
     "text": {
       "type": "plain_text",
-      "text": ":tada: Topic Of The Week :tada:"
+      "text": ":tada: Topic Of The Day :tada:"
     }
   },
   {
@@ -21,7 +21,7 @@
     "type": "header",
     "text": {
       "type": "plain_text",
-      "text": "Todays The Topic Of The Week :book: ",
+      "text": ":book: Todays The Topic Of The Day :book: ",
       "emoji": true
     }
   },
@@ -33,7 +33,7 @@
     "elements": [
       {
         "type": "mrkdwn",
-        "text": ":pushpin: Still looking for more TODW - submit a topic to be discuessed. Submit your ideas <https://forms.gle/JgcYVBZxLSJ9nEs78|here>\n https://forms.gle/JgcYVBZxLSJ9nEs78  "
+        "text": ":pushpin: Still looking for more TOTD - submit a topic to be discuessed. Submit your ideas <https://forms.gle/JgcYVBZxLSJ9nEs78|here>\n https://forms.gle/JgcYVBZxLSJ9nEs78  "
       }
     ]
   }

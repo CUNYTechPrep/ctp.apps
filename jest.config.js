@@ -1,3 +1,3 @@
 module.exports = {
-  projects: '<rootDir>/libs/ctp.alumni.newsletter/src/lib/topic-of-the-week',
+  projects: '<rootDir>/libs/ctp.alumni.topic-of-the-day',
 };

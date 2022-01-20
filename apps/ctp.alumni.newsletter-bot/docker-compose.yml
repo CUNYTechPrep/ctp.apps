@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  ctp.alumni.newsletter-bot:
+    build: ./
+    environment:
+        - NEWS_SLACK_BOT_TOKEN=${SLACK_BOT_TOKEN}
+        - NEWS_SLACK_APP_TOKEN=${SLACK_APP_TOKEN}
+        - NEWS_SLACK_SIGNING_SECRET=${SLACK_SIGNING_SECRET}
+        - APP=NEWS
+    ports:
+      - '3000:3000'
+  ctp.alumni.totd-bot:
+    build: ./
+    environment:
+        - TOTD_SLACK_BOT_TOKEN=${TOTD_SLACK_BOT_TOKEN}
+        - TOTD_SLACK_APP_TOKEN=${TOTD_SLACK_APP_TOKEN}
+        - TOTD_SLACK_SIGNING_SECRET=${TOTD_SLACK_SIGNING_SECRET}
+        - APP=TOTD
+    ports:
+      - '3000:3000'

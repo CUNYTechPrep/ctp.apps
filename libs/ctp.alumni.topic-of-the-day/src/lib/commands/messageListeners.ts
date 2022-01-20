@@ -1,4 +1,4 @@
-import { ctpAlumniNewsletter } from '../..';
+import { ctpAlumniNewsletterSrcLibTopicOfTheWeek } from '../topic-of-the-day/src'
 export const messageListeners = {
   /**
    * return pong on ping
@@ -23,16 +23,26 @@ export const messageListeners = {
    *     }
    * @return {*}  {Promise<any>}
    */
-  'events|latest events': async function ({
+  '#totd': async function ({
     message,
+    event,
     client,
     say,
+    body,
   }): Promise<any> {
     try {
-
-      await say({
-        blocks: await ctpAlumniNewsletter({ user: message.user }),
+      const { user } = await client.users.info({
+        token: process.env.SLACK_BOT_TOKEN,
+        user: message.user,
       });
+      //if (user.is_admin) {
+        await say({
+          blocks: await ctpAlumniNewsletterSrcLibTopicOfTheWeek(client),
+        });
+      //}
+      //else{
+       // throw Error("User Not Authorized To Run totw")
+      //}
     } catch (e) {
       client.chat.postEphemeral({
         token: process.env.SLACK_BOT_TOKEN,
