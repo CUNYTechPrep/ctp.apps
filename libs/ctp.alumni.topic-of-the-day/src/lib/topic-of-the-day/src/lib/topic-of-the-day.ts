@@ -28,7 +28,7 @@ export async function getTopVotes(votes): Promise<Array<any>> {
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: `${NUM_TO_SLACKMOJI[rest['voteCounts']] || ":zero:"} ${rest['Message/Topic (please add a URL link if there is one) *']}`,
+        text: `${NUM_TO_SLACKMOJI[rest['voteCounts']] || ":zero:"} : *${rest['Message/Topic (please add a URL link if there is one) *']}*`,
       },
       accessory: {
         type: 'button',
@@ -40,7 +40,6 @@ export async function getTopVotes(votes): Promise<Array<any>> {
         value: Timestamp,
         action_id: 'vote_action',
       },
-
     },
   ]))
 
@@ -61,7 +60,6 @@ export async function getTopVotes(votes): Promise<Array<any>> {
   return blocks;
 }
 export let lastTimeStamp = null;
-
 
 export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<any> {
   const blocks = [...Blocks];
