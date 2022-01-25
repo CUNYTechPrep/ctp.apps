@@ -7,12 +7,14 @@
     }
   },
   {
-    "type": "section",
-    "text": {
-      "type": "mrkdwn",
-      "text": "This is an opportunity to share your expert feedback, and mingle with talented, job-ready tech fellows !",
-      "verbatim": false
-    }
+    "type": "image",
+    "title": {
+      "type": "plain_text",
+      "text": "How To / Steps",
+      "emoji": true
+    },
+    "image_url": "https://github.com/CUNYTechPrep/ctp.apps/blob/master/apps/ctp.alumni.newsletter-bot/src/assets/HowItWorks.gif?raw=true",
+    "alt_text": "How To / Steps"
   },
   {
     "type": "divider"
@@ -24,9 +26,6 @@
       "text": ":book: Todays The Topic Of The Day :book: ",
       "emoji": true
     }
-  },
-  {
-    "type": "divider"
   },
   {
     "type": "context",

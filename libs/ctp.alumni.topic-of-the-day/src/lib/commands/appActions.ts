@@ -1,4 +1,6 @@
-import  db  from '../topic-of-the-day/src/lib/db';
+import db from '../topic-of-the-day/src/lib/db';
+import { getTopVotes, countVotes, lastTimeStamp } from '../topic-of-the-day/src/lib/topic-of-the-day'
+import Blocks from '../topic-of-the-day/src/lib/Blocks.json';
 export const appActions = {
   /**
    * Click Event to Say Thanks
@@ -46,33 +48,42 @@ export const appActions = {
         }
       );
     }
+    const topic_doc = await db.find({ Read: lastTimeStamp });
+    const [topVote] = topic_doc
+    const submitted = topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] ? topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] : "Anonymous";
+    const topic = topVote['Message/Topic (please add a URL link if there is one) *'] ? topVote['Message/Topic (please add a URL link if there is one) *'] : "No Topic Today Please Add More To The Google Form"
+    const topOfTheWeekBlock = [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": `"*${topic}*"`
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": `--> Submitted by ${submitted}`,
+          "verbatim": false
+        }
+      },
+      {
+        "type": "divider"
+      },
+    ]
 
-    const { user } = await client.users.info({
+    const blocks = [...Blocks];
+    const allDocs = await db.find({ Read: "" });
+    const votes = countVotes(allDocs).sort((a, b) => (a.voteCounts < b.voteCounts) ? 1 : -1)
+    blocks.splice(5, 0, ...topOfTheWeekBlock)
+    blocks.splice(7, 0, ...await getTopVotes(votes));
+
+    await client.chat.update({
       token: process.env.SLACK_BOT_TOKEN,
-      user: body.user.id,
-    });
-    const votes = docs.Votes?.split(',').length
-    await ack();
-    await say({
-      blocks: [
-        {
-          type: 'header',
-          text: {
-            type: 'plain_text',
-            text: 'Next Weeks Topic Discussion Poll?',
-          },
-        },
-        {
-          type: 'divider',
-        },
-        {
-          type: 'section',
-          text: {
-            type: 'mrkdwn',
-            text: `*${docs['Message/Topic (please add a URL link if there is one) *']}*  :    ${votes} votes`,
-          },
-        },
-      ],
+      channel: body.channel.id,
+      ts: body.message.ts,
+      blocks
     });
     client.chat.postEphemeral({
       token: process.env.SLACK_BOT_TOKEN,

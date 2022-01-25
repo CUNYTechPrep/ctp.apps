@@ -1,21 +1,34 @@
+import exp from 'constants';
 import Blocks from './Blocks.json';
 import db from './db';
 
-const countVotes = (rows) =>
+export const countVotes = (rows) =>
   rows.map(({ Votes, ...rest }) => ({
     ...rest,
-    Votes,
-    voteCounts: Votes?.split(',').length || 1
+    voteCounts: Votes?.split(',').length || 0
   }
   ));
 
-async function getTopVotes(topThree, client): Promise<Array<any>> {
-  const blocks_votes = await Promise.all(topThree.map(async ({ Timestamp, Votes, ...rest }) => ([
+const NUM_TO_SLACKMOJI = {
+  1: ":one:",
+  2: ":two:",
+  3: ":three:",
+  4: ":four:",
+  5: ":five:",
+  6: ":six:",
+  7: ":seven:",
+  8: ":eight:",
+  9: ":nine:",
+  10: ":keycap_ten:",
+}
+
+export async function getTopVotes(votes): Promise<Array<any>> {
+  const blocks_votes = votes.map(({ Timestamp, Votes, ...rest }) => ([
     {
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: rest['Message/Topic (please add a URL link if there is one) *'],
+        text: `${NUM_TO_SLACKMOJI[rest['voteCounts']] || ":zero:"} ${rest['Message/Topic (please add a URL link if there is one) *']}`,
       },
       accessory: {
         type: 'button',
@@ -27,79 +40,33 @@ async function getTopVotes(topThree, client): Promise<Array<any>> {
         value: Timestamp,
         action_id: 'vote_action',
       },
+
     },
-    // {
-    //   "type": "context",
-    //   "elements":
-    //     [
-    //       Votes?.split(',').length === 1 ?
-    //         {
-    //           "type": "plain_text",
-    //           "emoji": true,
-    //           "text": `${Votes} || no votes`
-    //         } :
-    //         Votes?.split(',')
-    //           .map(async userId => {
-    //             const { user } = await client.users.info({
-    //               token: process.env.SLACK_BOT_TOKEN,
-    //               user: userId,
-    //             });
-    //             return ([
-    //               {
-    //                 "type": "image",
-    //                 "image_url": "https://api.slack.com/img/blocks/bkb_template_images/profile_1.png",
-    //                 "alt_text": "Michael Scott"
-    //               },
-    //               {
-    //                 "type": "image",
-    //                 "image_url": "https://api.slack.com/img/blocks/bkb_template_images/profile_2.png",
-    //                 "alt_text": "Dwight Schrute"
-    //               },
-    //               {
-    //                 "type": "image",
-    //                 "image_url": "https://api.slack.com/img/blocks/bkb_template_images/profile_3.png",
-    //                 "alt_text": "Pam Beasely"
-    //               },
-    //             ])
-    //           }),
-    //       {
-    //         "type": "plain_text",
-    //         "emoji": true,
-    //         "text": `${Votes?.split(',').length - 1} votes`
-    //       }
-    //     ]
-    //},
-  ]
-  )))
+  ]))
 
   const blocks = [
     {
       type: 'header',
       text: {
         type: 'plain_text',
-        text: 'What should we talk about next week? :arrow_right:   :parrot: :bike: :computer:',
+        text: 'What should we talk about next week? :arrow_right: :parrot: :bike: :computer:',
         "emoji": true
       },
     },
+    {
+      "type": "divider"
+    },
     ...blocks_votes.flat(),
-    {
-      type: 'divider',
-    },
-    {
-      type: 'divider',
-    },
   ];
   return blocks;
 }
+export let lastTimeStamp = null;
+
 
 export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<any> {
   const blocks = [...Blocks];
-  const docs = await db.find({
-    Read: ""
-  });
-
-
-  const votes = countVotes(docs).sort((a, b) => (a.voteCounts > b.voteCounts) ? 1 : -1)
+  const docs = await db.find({ Read: "" });
+  const votes = countVotes(docs).sort((a, b) => (a.voteCounts < b.voteCounts) ? 1 : -1)
   const [topVote] = votes
   if (topVote) {
     const submitted = topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] ? topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] : "Anonymous";
@@ -119,20 +86,25 @@ export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<a
           "text": `--> Submitted by ${submitted}`,
           "verbatim": false
         }
-      }
+      },
+      {
+        "type": "divider"
+      },
     ]
     //Read topVote since its being used
+    lastTimeStamp = new Date().toISOString();
     db.update(
       {
         Timestamp: topVote.Timestamp,
       },
       {
-        Read: new Date().toISOString()
+        Read: lastTimeStamp
       })
+
     blocks.splice(4, 0, ...topOfTheWeekBlock)
-    votes.shift()
+    votes.shift() // Remove topOfTheWeekBlock from votes
     if (votes.length)
-      blocks.splice(7, 0, ...await getTopVotes(votes, client));
+      blocks.splice(7, 0, ...await getTopVotes(votes));
     else
       blocks.splice(7, 0, {
         "type": "section",
@@ -143,11 +115,11 @@ export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<a
       })
   }
   else {
-    blocks.splice(4, 0, {
+    blocks.splice(5, 0, {
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "*:zero: Topics Submitted* :shocked_face_with_exploding_head:"
+        "text": "*:zero: New Topics Submitted* :shocked_face_with_exploding_head:"
       }
     })
   }
