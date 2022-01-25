@@ -100,6 +100,16 @@ export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<a
       })
 
     blocks.splice(4, 0, ...topOfTheWeekBlock)
+    blocks.splice(5, 0, {
+    "type": "image",
+    "title": {
+      "type": "plain_text",
+      "text": "How To / Steps",
+      "emoji": true
+    },
+    "image_url": "https://github.com/CUNYTechPrep/ctp.apps/blob/master/apps/ctp.alumni.newsletter-bot/src/assets/%23TOTD.gif?raw=true",
+    "alt_text": "How To / Steps"
+  })
     votes.shift() // Remove topOfTheWeekBlock from votes
     if (votes.length)
       blocks.splice(7, 0, ...await getTopVotes(votes));
