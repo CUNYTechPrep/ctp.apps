@@ -48,7 +48,7 @@ export async function getTopVotes(votes): Promise<Array<any>> {
       type: 'header',
       text: {
         type: 'plain_text',
-        text: 'What should we talk about next week? :arrow_right: :parrot: :bike: :computer:',
+        text: 'What should we talk about tommorow? :arrow_right: :parrot: :bike: :computer:',
         "emoji": true
       },
     },
