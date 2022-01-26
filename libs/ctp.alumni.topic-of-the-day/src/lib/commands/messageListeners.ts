@@ -35,14 +35,13 @@ export const messageListeners = {
         token: process.env.SLACK_BOT_TOKEN,
         user: message.user,
       });
-      //if (user.is_admin) {
+      if (user.is_admin) {
         await say({
           blocks: await ctpAlumniNewsletterSrcLibTopicOfTheWeek(client),
         });
-      //}
-      //else{
-       // throw Error("User Not Authorized To Run totw")
-      //}
+      } else {
+        throw Error("User Not Authorized To Run totw")
+      }
     } catch (e) {
       client.chat.postEphemeral({
         token: process.env.SLACK_BOT_TOKEN,
@@ -50,6 +49,7 @@ export const messageListeners = {
         user: message.user,
         text: `Error ${e}`,
       });
+      console.error(e)
     }
   },
 };
