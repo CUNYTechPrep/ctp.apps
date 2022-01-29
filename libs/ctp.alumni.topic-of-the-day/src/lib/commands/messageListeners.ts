@@ -1,4 +1,8 @@
-import { ctpAlumniNewsletterSrcLibTopicOfTheWeek } from '../topic-of-the-day/src'
+import { voteBlock, totdBlock, countVotes } from '../topic-of-the-day/src'
+import db from '../topic-of-the-day/src/lib/db';
+import Blocks from '../blocks/Blocks.json'
+
+
 export const messageListeners = {
   /**
    * return pong on ping
@@ -36,9 +40,14 @@ export const messageListeners = {
         user: message.user,
       });
       if (user.is_admin) {
-        await say({
-          blocks: await ctpAlumniNewsletterSrcLibTopicOfTheWeek(client),
-        });
+        const { blocks, topic, votes } = await totdBlock();
+        await say({ blocks })
+        if (votes)
+          setTimeout(async () => {
+            await say({
+              blocks: await voteBlock(topic, votes),
+            });
+          }, 1000 * 10 * 10)
       } else {
         throw Error("User Not Authorized To Run totd")
       }

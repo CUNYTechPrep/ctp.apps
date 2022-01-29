@@ -1,5 +1,5 @@
 import exp from 'constants';
-import Blocks from './Blocks.json';
+import Blocks from '../../../blocks/Blocks.json';
 import db from './db';
 
 export const countVotes = (rows) =>
@@ -8,6 +8,8 @@ export const countVotes = (rows) =>
     voteCounts: Votes?.split(',').length || 0
   }
   ));
+
+function rand() { return Math.floor(Math.random() * 90) };
 
 const NUM_TO_SLACKMOJI = {
   1: ":one:",
@@ -22,7 +24,82 @@ const NUM_TO_SLACKMOJI = {
   10: ":keycap_ten:",
 }
 
-export async function getTopVotes(votes): Promise<Array<any>> {
+export const totdBlock = async () => {
+  const docs = await db.find({ Read: "" });
+  const votes = countVotes(docs).sort((a, b) => (a.voteCounts < b.voteCounts) ? 1 : -1)
+  const [topVote] = votes
+  if (topVote) {
+    const submitted = topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] ? topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] : "Anonymous";
+    const topic = topVote['Message/Topic (please add a URL link if there is one) *'] ? topVote['Message/Topic (please add a URL link if there is one) *'] : "No Topic Today Please Add More To The Google Form"
+    await db.update(
+      {
+        Timestamp: topVote.Timestamp,
+      },
+      {
+        Read: new Date().toISOString()
+      })
+    votes.shift();
+    const blocks = [...Blocks];
+    const todaysImage = 'https://picsum.photos/' + (600 + rand()) + '/' + (200 + rand()) + '?random=1'
+    blocks.splice(4, 0, ...[
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": `"*${topic}*"`
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": `--> Submitted by ${submitted}`,
+        }
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "image",
+        "title": {
+          "type": "plain_text",
+          "text": "Today's Topic",
+          "emoji": true
+        },
+        "image_url": "https://github.com/CUNYTechPrep/ctp.apps/blob/master/apps/ctp.alumni.newsletter-bot/src/assets/%23TOTD.gif?raw=true",
+        "alt_text": "How To / Steps"
+      },
+      {
+        "type": "image",
+        "title": {
+          "type": "plain_text",
+          "text": "Today's Image "+todaysImage,
+          "emoji": true
+        },
+        "image_url": todaysImage,
+        "alt_text": todaysImage
+      }
+    ]
+    )
+    return { blocks, topic, votes };
+  }
+  return {
+    blocks: [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*:zero: New Topics Submitted* :shocked_face_with_exploding_head:"
+        }
+      }
+    ],
+    votes: null
+
+  }
+}
+
+
+export async function getTopVotes(votes, Topic): Promise<Array<any>> {
   const blocks_votes = votes.map(({ Timestamp, Votes, ...rest }) => ([
     {
       type: 'section',
@@ -37,7 +114,7 @@ export async function getTopVotes(votes): Promise<Array<any>> {
           emoji: true,
           text: 'Vote',
         },
-        value: Timestamp,
+        value: `${JSON.stringify({ Timestamp, Topic })}`,
         action_id: 'vote_action',
       },
     },
@@ -59,77 +136,7 @@ export async function getTopVotes(votes): Promise<Array<any>> {
   ];
   return blocks;
 }
-export let lastTimeStamp = null;
 
-export async function ctpAlumniNewsletterSrcLibTopicOfTheWeek(client): Promise<any> {
-  const blocks = [...Blocks];
-  const docs = await db.find({ Read: "" });
-  const votes = countVotes(docs).sort((a, b) => (a.voteCounts < b.voteCounts) ? 1 : -1)
-  const [topVote] = votes
-  if (topVote) {
-    const submitted = topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] ? topVote['Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'] : "Anonymous";
-    const topic = topVote['Message/Topic (please add a URL link if there is one) *'] ? topVote['Message/Topic (please add a URL link if there is one) *'] : "No Topic Today Please Add More To The Google Form"
-    const topOfTheWeekBlock = [
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": `"*${topic}*"`
-        }
-      },
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": `--> Submitted by ${submitted}`,
-          "verbatim": false
-        }
-      },
-      {
-        "type": "divider"
-      },
-    ]
-    //Read topVote since its being used
-    lastTimeStamp = new Date().toISOString();
-    db.update(
-      {
-        Timestamp: topVote.Timestamp,
-      },
-      {
-        Read: lastTimeStamp
-      })
-
-    blocks.splice(4, 0, ...topOfTheWeekBlock)
-    blocks.splice(5, 0, {
-    "type": "image",
-    "title": {
-      "type": "plain_text",
-      "text": "How To / Steps",
-      "emoji": true
-    },
-    "image_url": "https://github.com/CUNYTechPrep/ctp.apps/blob/master/apps/ctp.alumni.newsletter-bot/src/assets/%23TOTD.gif?raw=true",
-    "alt_text": "How To / Steps"
-  })
-    votes.shift() // Remove topOfTheWeekBlock from votes
-    if (votes.length)
-      blocks.splice(7, 0, ...await getTopVotes(votes));
-    else
-      blocks.splice(7, 0, {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": "*:zero: Topics Submitted* :shocked_face_with_exploding_head:"
-        }
-      })
-  }
-  else {
-    blocks.splice(5, 0, {
-      "type": "section",
-      "text": {
-        "type": "mrkdwn",
-        "text": "*:zero: New Topics Submitted* :shocked_face_with_exploding_head:"
-      }
-    })
-  }
-  return blocks;
+export async function voteBlock(topic, votes): Promise<any> {
+  return getTopVotes(votes, topic);
 }

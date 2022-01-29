@@ -21,6 +21,7 @@
       "@ctp.apps/ctp.alumni.newsletter/src/lib/topic-of-the-day": [
         "libs/ctp.alumni.newsletter/src/lib/topic-of-the-day/src/index.ts"
       ],
+      "@ctp.apps/logger": ["libs/logger/src/index.ts"],
       "@ctp.apps/test": ["libs/test/src/index.ts"],
       "@cunytechprep/ctp.alumni.advice": [
         "libs/ctp.alumni.advice/src/index.ts"
