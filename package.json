@@ -7,7 +7,7 @@
     "start": "nx serve",
     "build": "nx build --prod --prefix-paths",
     "test": "npm run lint && nx run-many --all --target=test --codeCoverage --env=jsdom",
-    "heroku-postbuild": "nx build ctp.alumni.newsletter-bot",
+    "heroku-postbuild": "nx build ctp.alumni.newsletter-bot --prod",
     "deploy:ctp.alumni.newsletter-bot": "APP=NEWS NODE_ENV=production node ./dist/apps/ctp.alumni.newsletter-bot/main.js",
     "deploy:ctp.alumni.totd-bot": "APP=TOTD NODE_ENV=production node ./dist/apps/ctp.alumni.newsletter-bot/main.js",
     "test:all": "nx run-many --all --target=test --env=jsdom",
