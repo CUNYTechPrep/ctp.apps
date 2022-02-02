@@ -9,7 +9,7 @@
     "test": "npm run lint && nx run-many --all --target=test --codeCoverage --env=jsdom",
     "heroku-postbuild": "nx build ctp.alumni.newsletter-bot",
     "deploy:ctp.alumni.newsletter-bot": "APP=NEWS NODE_ENV=production node ./dist/apps/ctp.alumni.newsletter-bot/main.js",
-    "deploy:ctp.alumni.totd-bot": "APP=TOTD node NODE_ENV=production node ./dist/apps/ctp.alumni.newsletter-bot/main.js",
+    "deploy:ctp.alumni.totd-bot": "APP=TOTD NODE_ENV=production node ./dist/apps/ctp.alumni.newsletter-bot/main.js",
     "test:all": "nx run-many --all --target=test --env=jsdom",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
