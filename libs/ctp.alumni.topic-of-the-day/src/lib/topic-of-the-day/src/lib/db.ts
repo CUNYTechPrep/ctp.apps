@@ -11,6 +11,7 @@ fs.writeFile(
     console.log('Saved File')
   }
 );
+logger.info("App Set in ",process.env.NODE_ENV,"Mode")
 if (process.env.NODE_ENV === 'production') {
   db = new Database({
     db: '1sZg_w6OUPOFAEqxnbKBEl7fIgBy0caYzwDLqeu-9rpE',
