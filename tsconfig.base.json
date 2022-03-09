@@ -31,6 +31,9 @@
       ],
       "@cunytechprep/ctp.alumni.topic-of-the-day": [
         "libs/ctp.alumni.topic-of-the-day/src/index.ts"
+      ],
+      "@cunytechprep/ctp.alumni.weekly-tech-challenge": [
+        "libs/ctp.alumni.weekly-tech-challenge/src/index.ts"
       ]
     }
   },

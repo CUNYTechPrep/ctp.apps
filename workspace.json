@@ -275,6 +275,42 @@
       },
       "tags": []
     },
+    "ctp.alumni.weekly-tech-challenge": {
+      "root": "libs/ctp.alumni.weekly-tech-challenge",
+      "sourceRoot": "libs/ctp.alumni.weekly-tech-challenge/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/ctp.alumni.weekly-tech-challenge",
+            "tsConfig": "libs/ctp.alumni.weekly-tech-challenge/tsconfig.lib.json",
+            "packageJson": "libs/ctp.alumni.weekly-tech-challenge/package.json",
+            "main": "libs/ctp.alumni.weekly-tech-challenge/src/index.ts",
+            "assets": ["libs/ctp.alumni.weekly-tech-challenge/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/ctp.alumni.weekly-tech-challenge/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ctp.alumni.weekly-tech-challenge"],
+          "options": {
+            "jestConfig": "libs/ctp.alumni.weekly-tech-challenge/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "logger": {
       "root": "libs/logger",
       "sourceRoot": "libs/logger/src",

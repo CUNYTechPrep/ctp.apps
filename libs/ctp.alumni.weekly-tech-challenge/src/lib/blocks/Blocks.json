@@ -1,0 +1,41 @@
+[
+  {
+    "type": "header",
+    "text": {
+      "type": "plain_text",
+      "text": ":tada: CTP Weekly Tech Challenge :tada:"
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "header",
+    "text": {
+      "type": "plain_text",
+      "text": ":book: Todays Tech Challenge :book: ",
+      "emoji": true
+    }
+  },
+  {
+    "type": "context",
+    "elements": [
+      {
+        "type": "mrkdwn",
+        "text": "<https://forms.gle/hD2HP7mVyLnEr6k17| Submit your solutions here>. :flashing_lights: *`Solutions Revealed Friday`* :date: "
+      }
+    ]
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "context",
+    "elements": [
+      {
+        "type": "mrkdwn",
+        "text": ":pushpin: Still looking for more challenges - submit a question and topic to be discuessed. <https://forms.gle/xWuWN6UvYiKEygei7|Submit your ideas >\n https://forms.gle/xWuWN6UvYiKEygei7"
+      }
+    ]
+  }
+]
