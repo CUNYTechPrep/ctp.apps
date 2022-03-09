@@ -42,7 +42,7 @@ export const totdBlock = async () => {
       })
 
     const blocks = [...Blocks];
-    const todaysImage = 'https://picsum.photos/' + (600 + rand()) + '/' + (200 + rand()) + '?random=1'
+    const todaysImage = 'https://picsum.photos/' + (600 + rand()) + '/' + (200 + rand()) + '?random=1' 
     blocks.splice(5, 0, ...[
       {
         "type": "section",
@@ -92,7 +92,7 @@ export const totdBlock = async () => {
 }
 
 
-export async function getTopVotes(votes, Topic): Promise<Array<any>> {
+export async function getTopVotes(votes, Topic) {
   try {
     const key = 'Topic of the Question'
     const blocks_votes = votes.map(({ Timestamp, Votes, ...rest }) => ([
@@ -135,7 +135,7 @@ export async function getTopVotes(votes, Topic): Promise<Array<any>> {
   }
 }
 
-export async function voteBlock(topic, votes): Promise<any> {
+export async function voteBlock(topic, votes) {
   try {
     return getTopVotes(votes, topic);
   } catch (e) {
