@@ -8,7 +8,7 @@ For the companion getting started setup guide,
 see: https://slack.dev/bolt-js/tutorial/getting-started 
 */
 import { App } from '@slack/bolt';
-
+import { runIt  } from './cron';
 // Initializes your app with your bot token and app token
 const config = {
   token: process.env[process.env.APP + '_SLACK_BOT_TOKEN'],
@@ -16,7 +16,7 @@ const config = {
   appToken: process.env[process.env.APP + '_SLACK_APP_TOKEN'],
   signingSecret: process.env[process.env.APP + '_SLACK_SIGNING_SECRET'],
 };
-const app = new App(config);
+export const app = new App(config);
 
 (async () => {
   // Start your app
@@ -41,3 +41,6 @@ const app = new App(config);
     console.error(e);
   }
 })();
+
+
+runIt()

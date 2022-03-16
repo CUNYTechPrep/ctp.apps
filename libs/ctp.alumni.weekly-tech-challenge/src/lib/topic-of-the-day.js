@@ -25,7 +25,7 @@ const NUM_TO_SLACKMOJI = {
 
 export const totdBlock = async () => {
   const docs = await db.find({ Read: "" }) || [];
-  const votes = countVotes(docs).sort((a, b) => (a.voteCounts < b.voteCounts) ? 1 : -1) || []
+  const votes = countVotes(docs).sort((a, b) => (a.voteCounts > b.voteCounts) ? 1 : -1) || []
   const topVote = votes.pop()
 
   if (topVote) {
