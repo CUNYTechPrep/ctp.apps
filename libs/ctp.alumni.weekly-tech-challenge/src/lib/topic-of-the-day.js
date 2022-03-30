@@ -25,11 +25,13 @@ const NUM_TO_SLACKMOJI = {
 
 export const totdBlock = async () => {
   const docs = await db.find({ Read: "" }) || [];
+  console.log(docs)
   const votes = countVotes(docs).sort((a, b) => (a.voteCounts > b.voteCounts) ? 1 : -1) || []
   const topVote = votes.pop()
 
   if (topVote) {
-    const key = 'Question to ask? (please add a URL link if there is one)* '
+    console.log(topVote)
+    const key = 'Title of question (please add a URL link if there is one)* '
     const user = 'Name & Slack Handle (if you would like to be tagged. If you would not like to be tagged, leave blank!)'
     const submitted = topVote[user] ? topVote[user] : "Anonymous";
     const topic = topVote[key] ? topVote[key] : "No Challenges Today Please Add More To The Google Form"
@@ -43,8 +45,19 @@ export const totdBlock = async () => {
 
     const blocks = [...Blocks];
     const todaysImage = 'https://picsum.photos/' + (600 + rand()) + '/' + (200 + rand()) + '?random=1' 
+    const question = topVote['Question Screen-Shot']
     blocks.splice(5, 0, ...[
-      {
+      question && {
+        "type": "image",
+        "title": {
+          "type": "plain_text",
+          "text": "Today's Question",
+          "emoji": true
+        },
+        "image_url":  question,
+        "alt_text": question 
+      },
+       {
         "type": "section",
         "text": {
           "type": "mrkdwn",
@@ -71,7 +84,9 @@ export const totdBlock = async () => {
         "image_url": todaysImage,
         "alt_text": todaysImage
       }
-    ])
+    ].filter(e => e))
+
+    console.log({blocks})
 
     return { blocks, topic, votes };
   }
